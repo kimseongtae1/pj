@@ -1,0 +1,25 @@
+* {
+    margin:0; /*브라우저 내 기본 설정값 초기화*/
+    padding: 0;/*브라우저 내 기본 설정값 초기화*/
+    box-sizing: border-box;
+} 
+@font-face {
+    font-family: 'Arita-dotum-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GowunDodum';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/yangheeryu/GowunDodum.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/yangheeryu/GowunDodum?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/yangheeryu/GowunDodum.ttf') format("truetype");
+    font-display: swap;
+} 
+
+body{
+    font-family: 'Arita-dotum-Medium';
+}
