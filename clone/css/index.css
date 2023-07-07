@@ -2867,6 +2867,7 @@ font-size: 16px;
 }
 
 .f_left_1 > ul{
+    display: flex;
     white-space: nowrap;
     list-style-type: none;
 }
