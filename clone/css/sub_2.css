@@ -165,6 +165,8 @@ main {
     font-size: 12px;
   }
   .mb_foot1 .foot1_mb2 .foot1_list {
+    display: none;
+    position: absolute;
     border: 1px solid #ededed;
     list-style-type: none;
     font-size: 12px;
@@ -792,6 +794,8 @@ main {
     font-size: 12px;
   }
   .mb_foot1 .foot1_mb2 .foot1_list {
+    position: absolute;
+    display: none;
     border: 1px solid #ededed;
     list-style-type: none;
     font-size: 12px;

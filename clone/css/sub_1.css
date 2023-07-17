@@ -164,6 +164,8 @@
     font-size: 12px;
   }
   .mb_foot1 .foot1_mb2 .foot1_list {
+    display: none;
+    position: absolute;
     border: 1px solid #ededed;
     list-style-type: none;
     font-size: 12px;
@@ -250,7 +252,7 @@
     padding: 20px;
     position: sticky;
     top: 50px;
-    z-index: 100;
+    z-index: 1;
     background-color: white;
   }
   .good_item .g1_it {
@@ -361,67 +363,70 @@
     font-size: 14px;
     color: #999;
   }
-  .ggood .ggood_1 .ggood_i {
+  .ggood .ggood_1 .add {
+    z-index: 0;
+  }
+  .ggood .ggood_1 .add .ggood_i {
     display: flex;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img1 {
+  .ggood .ggood_1 .add .ggood_i .ggood_img1 {
     position: relative;
     cursor: pointer;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img1 .gg_pc1 {
+  .ggood .ggood_1 .add .ggood_i .ggood_img1 .gg_pc1 {
     display: none;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img1 .gg_mo1 {
+  .ggood .ggood_1 .add .ggood_i .ggood_img1 .gg_mo1 {
     padding-right: 20px;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img1 .gg_mo1 img {
+  .ggood .ggood_1 .add .ggood_i .ggood_img1 .gg_mo1 img {
     width: 90vw;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img1 .ggood_ti1 {
+  .ggood .ggood_1 .add .ggood_i .ggood_img1 .ggood_ti1 {
     position: absolute;
     left: 4%;
     top: 80%;
     color: #fff;
     font-weight: bold;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img1 .ggood_ti1 p:nth-of-type(1) {
+  .ggood .ggood_1 .add .ggood_i .ggood_img1 .ggood_ti1 p:nth-of-type(1) {
     font-size: 17px;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img1 .ggood_ti1 p:nth-of-type(2) {
+  .ggood .ggood_1 .add .ggood_i .ggood_img1 .ggood_ti1 p:nth-of-type(2) {
     font-size: 13px;
     margin: 20px 0;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img1 .ggood_ti1 p:nth-of-type(3) {
+  .ggood .ggood_1 .add .ggood_i .ggood_img1 .ggood_ti1 p:nth-of-type(3) {
     font-size: 16px;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img2 {
+  .ggood .ggood_1 .add .ggood_i .ggood_img2 {
     position: relative;
     cursor: pointer;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img2 .gg_pc2 {
+  .ggood .ggood_1 .add .ggood_i .ggood_img2 .gg_pc2 {
     display: none;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img2 .gg_mo2 {
+  .ggood .ggood_1 .add .ggood_i .ggood_img2 .gg_mo2 {
     padding-right: 20px;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img2 .gg_mo2 img {
+  .ggood .ggood_1 .add .ggood_i .ggood_img2 .gg_mo2 img {
     width: 90vw;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img2 .ggood_ti2 {
+  .ggood .ggood_1 .add .ggood_i .ggood_img2 .ggood_ti2 {
     position: absolute;
     left: 4%;
     top: 80%;
     color: #fff;
     font-weight: bold;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img2 .ggood_ti2 p:nth-of-type(1) {
+  .ggood .ggood_1 .add .ggood_i .ggood_img2 .ggood_ti2 p:nth-of-type(1) {
     font-size: 17px;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img2 .ggood_ti2 p:nth-of-type(2) {
+  .ggood .ggood_1 .add .ggood_i .ggood_img2 .ggood_ti2 p:nth-of-type(2) {
     font-size: 13px;
     margin: 20px 0;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img2 .ggood_ti2 p:nth-of-type(3) {
+  .ggood .ggood_1 .add .ggood_i .ggood_img2 .ggood_ti2 p:nth-of-type(3) {
     font-size: 16px;
   }
   .it_list {
@@ -648,6 +653,8 @@
     font-size: 12px;
   }
   .mb_foot1 .foot1_mb2 .foot1_list {
+    display: none;
+    position: absolute;
     border: 1px solid #ededed;
     list-style-type: none;
     font-size: 12px;
@@ -731,7 +738,7 @@
     justify-content: center;
     border-bottom: 1px solid #ededed;
     padding: 20px auto;
-    z-index: 100;
+    z-index: 1;
     position: sticky;
     left: 0;
     top: 65px;
@@ -844,24 +851,27 @@
     font-size: 14px;
     color: #999;
   }
-  .ggood .ggood_1 .ggood_i {
+  .ggood .ggood_1 .add {
+    z-index: 0;
+  }
+  .ggood .ggood_1 .add .ggood_i {
     display: flex;
     position: relative;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img1 {
+  .ggood .ggood_1 .add .ggood_i .ggood_img1 {
     position: relative;
     cursor: pointer;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img1 .gg_pc1 {
+  .ggood .ggood_1 .add .ggood_i .ggood_img1 .gg_pc1 {
     display: none;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img1 .gg_mo1 {
+  .ggood .ggood_1 .add .ggood_i .ggood_img1 .gg_mo1 {
     padding-right: 10px;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img1 .gg_mo1 img {
+  .ggood .ggood_1 .add .ggood_i .ggood_img1 .gg_mo1 img {
     width: 90vw;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img1 .ggood_ti1 {
+  .ggood .ggood_1 .add .ggood_i .ggood_img1 .ggood_ti1 {
     position: absolute;
     left: 1%;
     top: 65%;
@@ -869,44 +879,44 @@
     font-weight: bold;
     padding: 10px;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img1 .ggood_ti1 p:nth-of-type(1) {
+  .ggood .ggood_1 .add .ggood_i .ggood_img1 .ggood_ti1 p:nth-of-type(1) {
     font-size: 17px;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img1 .ggood_ti1 p:nth-of-type(2) {
+  .ggood .ggood_1 .add .ggood_i .ggood_img1 .ggood_ti1 p:nth-of-type(2) {
     font-size: 13px;
     margin: 10px 0;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img1 .ggood_ti1 p:nth-of-type(3) {
+  .ggood .ggood_1 .add .ggood_i .ggood_img1 .ggood_ti1 p:nth-of-type(3) {
     font-size: 16px;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img2 {
+  .ggood .ggood_1 .add .ggood_i .ggood_img2 {
     position: relative;
     cursor: pointer;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img2 .gg_pc2 {
+  .ggood .ggood_1 .add .ggood_i .ggood_img2 .gg_pc2 {
     display: none;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img2 .gg_mo2 {
+  .ggood .ggood_1 .add .ggood_i .ggood_img2 .gg_mo2 {
     padding-right: 10px;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img2 .gg_mo2 img {
+  .ggood .ggood_1 .add .ggood_i .ggood_img2 .gg_mo2 img {
     width: 90vw;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img2 .ggood_ti2 {
+  .ggood .ggood_1 .add .ggood_i .ggood_img2 .ggood_ti2 {
     position: absolute;
     left: 4%;
     top: 60%;
     color: #fff;
     font-weight: bold;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img2 .ggood_ti2 p:nth-of-type(1) {
+  .ggood .ggood_1 .add .ggood_i .ggood_img2 .ggood_ti2 p:nth-of-type(1) {
     font-size: 17px;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img2 .ggood_ti2 p:nth-of-type(2) {
+  .ggood .ggood_1 .add .ggood_i .ggood_img2 .ggood_ti2 p:nth-of-type(2) {
     font-size: 13px;
     margin: 20px 0;
   }
-  .ggood .ggood_1 .ggood_i .ggood_img2 .ggood_ti2 p:nth-of-type(3) {
+  .ggood .ggood_1 .add .ggood_i .ggood_img2 .ggood_ti2 p:nth-of-type(3) {
     font-size: 16px;
   }
   .it_list {

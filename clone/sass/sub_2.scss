@@ -192,6 +192,8 @@ main{
                 font-size: 12px;
             }
             .foot1_list{
+                display: none;
+                position: absolute;
                 border: 1px solid #ededed;
                 list-style-type: none;
                 font-size: 12px;
@@ -910,6 +912,8 @@ main{
                 font-size: 12px;
             }
             .foot1_list{
+                position: absolute;
+                display: none;
                 border: 1px solid #ededed;
                 list-style-type: none;
                 font-size: 12px;
