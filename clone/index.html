@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
 </head>
 <body>
@@ -120,17 +123,61 @@
 
     <main>
 
-    <div class="banner_main">
-        <div class="banner">
-            
-            <div class="img_box">
-                    <div class="pc_bn"><img src="./img/20230228105139711JA.png"></div>
-                    <div class="mb_bn"><img src="./img/20230228105143392OR.png"></div>
+    <div class="swiper mySwiper banner_main">
+        <div class="swiper-wrapper banner">
+                    <div class="swiper-slide img_box">
+                            <div class="pc_bn"><img src="./img/20230228105139711JA.png"></div>
+                            <div class="mb_bn"><img src="./img/20230228105143392OR.png"></div>
+                        <div class="txt_space">
+                            <div class="text_box">
+                                <h3>VIP VVIP 등급 혜택<br>다다일상 체험권 증정</h3>
+                                <p>VIP,VVIP 고객 대상 맴버십 혜택<br>지금 다다일상을 경험해보세요.</p>
+                                <p>03.01 - 06.30</p>
+                            </div>
+                            <div class="osulloc_mbt">
+                                <button type="button" title="이벤트 전체보기">이벤트 전체보기</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide img_box">
+                            <div class="pc_bn"><img src="./img/20230712135155917LA.jpg"></div>
+                            <div class="mb_bn"><img src="./img/20230712135200318QF.jpg"></div>
+                        <div class="txt_space">
+                            <div class="text_box">
+                                <h3>한여름 수분 충전을 위한<br>찬물 루이보스 티</h3>
+                                <p>카페인 걱정없는 수분 충전 습관!<br>고소한 보리 블렌딩 루이보스 티 ~34% 할인</p>
+                                <p>07.13 - 07.23</p>
+                            </div>
+                            <div class="osulloc_mbt">
+                                <button type="button" title="이벤트 전체보기">이벤트 전체보기</button>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="swiper-slide img_box">
+                        <div class="pc_bn"><img src="./img/20230621110519814ZG.jpg"></div>
+                        <div class="mb_bn"><img src="./img/20230621110527158KK.jpg"></div>
+                    <div class="txt_space">
+                        <div class="text_box">
+                            <h3>7월 추천, 만발한 정원이<br>떠오르는 플로럴 티</h3>
+                            <p>티 한 잔으로 싱그러운 꽃내음을 즐겨보세요.</p>
+                            <p>07.01 - 07.15</p>
+                        </div>
+                        <div class="osulloc_mbt">
+                            <button type="button" title="이벤트 전체보기">이벤트 전체보기</button>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="swiper-slide img_box">
+                    <div class="pc_bn"><img src="./img/20220705112053996OM.png"></div>
+                    <div class="mb_bn"><img src="./img/20220705112058600II.png"></div>
                 <div class="txt_space">
                     <div class="text_box">
-                        <h3>VIP VVIP 등급 혜택<br>다다일상 체험권 증정</h3>
-                        <p>VIP,VVIP 고객 대상 맴버십 혜택<br>지금 다다일상을 경험해보세요.</p>
-                        <p>03.01 - 06.30</p>
+                        <h3>오설록 선물하기 서비스<br>잘 활용하는 법</h3>
+                        <p>오설록의 간편한 선물하기 서비스로<br>언제든지 편하고 가볍게 티타임을 선물해보세요.</p>
+                        <p>01.01 - 12.31</p>
                     </div>
                     <div class="osulloc_mbt">
                         <button type="button" title="이벤트 전체보기">이벤트 전체보기</button>
@@ -138,7 +185,38 @@
                 </div>
             </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
     </div>
+
+    <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".banner_main", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            effect: "fade",
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            });
+
+            swiper.autoplay.stop();
+            swiper.autoplay.start();
+        </script>
 
         <section>
                 <div class="sect1">
@@ -163,23 +241,18 @@
                 </div>
             
 
-                <div class="slide1">
-                    <div class = "sd1">
-                        <div class="sd_bt1">
-                            <button type="button" title="notice"><img src="./img/main_prev_btn.png"></button>
-                        </div>
-                    <div class="item1">
+            <div class="swiper mySwiper slide1">
+                <div class = "swiper-wrapper sd1">
+                    <div class="swiper-slide item1">
                         <a href="#">
                             <img src="./img/304_20220830150343985QN.png">
                         </a>
                         <div class="item1_txt">
-                            <a href="#">
-                                찬물 루이보스 티
-                            </a>
+                            <a href="#">찬물 루이보스 티</a>
                         <p>8,550원</p>
                         </div>
                     </div>
-                    <div class="item2">
+                    <div class="swiper-slide item2">
                         <a href="#">
                             <img src="./img/304_20220818110344724FX.png">
                         </a>
@@ -190,7 +263,7 @@
                             <p>17,000원</p>
                         </div>
                     </div>
-                    <div class="item3">
+                    <div class="swiper-slide item3">
                         <a href="#">
                             <img src="./img/304_20200513135231693GB.png">
                         </a>
@@ -201,7 +274,7 @@
                             <p>38,000원</p>
                         </div>
                     </div>
-                    <div class="item4">
+                    <div class="swiper-slide item4">
                         <a href="#">
                             <img src="./img/304_20201027143838409ZN.png">
                         </a>
@@ -212,22 +285,97 @@
                             <p>28,000원</p>
                         </div>
                     </div>
-                    <div class="item5">
+                    <div class="swiper-slide item5">
                         <a href="#">
                             <img src="./img/304_20221114150238508QK.png">
                         </a>
                         <div class="item5_txt">
                             <a href="#">
-                                <p>마스터 블렌드</p>
+                                <p>마스터 블렌드 (+다구 키트 증정)</p>
                             </a>
                             <p>55,000원</p>
                         </div>
                     </div>
-
-                    <div class="sd_bt2">
-                        <button type="button" title="notice"><img src="./img/main_next_btn.png"></button>
+                    <div class="swiper-slide item5">
+                        <a href="#">
+                            <img src="./img/304_20221229163433071ZU.png">
+                        </a>
+                        <div class="item5_txt">
+                            <a href="#">
+                                <p>찬물 녹차</p>
+                            </a>
+                            <p>9,500원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item5">
+                        <a href="#">
+                            <img src="./img/304_20200110161302294EE.png">
+                        </a>
+                        <div class="item5_txt">
+                            <a href="#">
+                                <p>달빛걷기 20입</p>
+                            </a>
+                            <p>25,000원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item5">
+                        <a href="#">
+                            <img src="./img/304_20230525140314297OQ.png">
+                        </a>
+                        <div class="item5_txt">
+                            <a href="#">
+                                <p>콤부차 애플파인 10입</p>
+                            </a>
+                            <p>8,000원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item5">
+                        <a href="#">
+                            <img src="./img/304_20221226130249926MH.png">
+                        </a>
+                        <div class="item5_txt">
+                            <a href="#">
+                                <p>티 모먼트 (+다구 키트 증정)</p>
+                            </a>
+                            <p>35,000원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item5">
+                        <a href="#">
+                            <img src="./img/304_20230710115631648HY.png">
+                        </a>
+                        <div class="item5_txt">
+                            <a href="#">
+                                <p>달빛섬&얼그레이 웨하스 (+추가 증정)</p>
+                            </a>
+                            <p>18,500원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item5">
+                        <a href="#">
+                            <img src="./img/304_20230710115606101WB.png">
+                        </a>
+                        <div class="item5_txt">
+                            <a href="#">
+                                <p>영귤섬&그린티 웨하스 (+추가 증정)</p>
+                            </a>
+                            <p>18,500원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item5">
+                        <a href="#">
+                            <img src="./img/304_20230710115532622ZC.png">
+                        </a>
+                        <div class="item5_txt">
+                            <a href="#">
+                                <p>노을섬&녹차 와플 (+추가 증정)</p>
+                            </a>
+                            <p>18,500원</p>
+                        </div>
                     </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
 
             <div class="plus">
@@ -235,6 +383,22 @@
                     <span>더보기</span>
                 </button>
             </div>
+
+            <script>
+                var swiper = new Swiper(".slide1", {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+                  loop: true,
+                  autoplay: {
+                    delay: 3000, //add
+                    disableOnInteraction: false,
+                  },
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  },
+                });
+              </script>
 
             <div class="total_today">
                 <div class="total_space">
@@ -376,53 +540,82 @@
                     <p>오프라인 매장에서 다채로운 오설록을 경험하세요.</p>
                 </div>
 
-                <div class="flex_b2">
-
-                    <div class="f_b_bt1">
-                        <button type="button" title="notice"><img src="./img/main_prev_btn.png"></button>
-                    </div>
-
-                    <div class="slide_wrap_p1">
-                        <div class="s_w_i1">
-                            <a href="#">
-                                <img src="./img/osl_main_st_th1.jpg">
-                            <div class="s_w_t1">
-                                <h6>오설록<br>티하우스 북촌점</h6>
-                                <p>차를 통해 새로운 감각과 취향을<br>보여주는 가치변화의 공간</p>
-                         </div>
-                        </a>
-                        </div>
-                    </div>
-
-                    <div class="slide_wrap_p2">
-                        <div class="s_w_i2">
-                            <a href="#">
-                                <img src="./img/osl_main_st_th2.jpg">
-                            <div class="s_w_t2">
-                                <h6>오설록<br>티하우스 용산파크점</h6>
-                                <p>캐주얼하면서도 차에 대한<br>전문성을 담은 세련된 공간</p>
+                <div class="swiper mySwiper haha">
+                    <div class="swiper-wrapper flex_b2">
+                        <div class="swiper-slide slide_wrap_p1">
+                            <div class="s_w_i1">
+                                <a href="#">
+                                    <img src="./img/osl_main_st_th1.jpg">
+                                <div class="s_w_t1">
+                                    <h6>오설록<br>티하우스 북촌점</h6>
+                                    <p>차를 통해 새로운 감각과 취향을<br>보여주는 가치변화의 공간</p>
                             </div>
-                        </a>
-                        </div>
-                    </div>
-
-                    <div class="slide_wrap_p3">
-                        <div class="s_w_i3">
-                            <a href="#">
-                                <img src="./img/osl_main_st_th3.jpg">
-                            <div class="s_w_t3">
-                                <h6>오설록<br>티하우스 한남점</h6>
-                                <p>브랜드의 격을 한 단계 끌어올린<br>오설록의 프리미엄 티룸</p>
+                            </a>
                             </div>
-                        </a>
+                        </div>
+
+                        <div class="swiper-slide slide_wrap_p2">
+                            <div class="s_w_i2">
+                                <a href="#">
+                                    <img src="./img/osl_main_st_th2.jpg">
+                                <div class="s_w_t2">
+                                    <h6>오설록<br>티하우스 용산파크점</h6>
+                                    <p>캐주얼하면서도 차에 대한<br>전문성을 담은 세련된 공간</p>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide slide_wrap_p3">
+                            <div class="s_w_i3">
+                                <a href="#">
+                                    <img src="./img/osl_main_st_tm1.jpg">
+                                <div class="s_w_t3">
+                                    <h6>제주 오설록<br>티뮤지엄</h6>
+                                    <p>차의 역사와 문화를 체험할 수 있는<br>국내 최대 차 종합 전시관</p>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide_wrap_p3">
+                            <div class="s_w_i3">
+                                <a href="#">
+                                    <img src="./img/osl_main_st_th4.jpg">
+                                <div class="s_w_t3">
+                                    <h6>오설록<br>티하우스 MMCA</h6>
+                                    <p>문화 예술을 함께하는 차문화의 발견<br>티하우스 MMCA</p>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide_wrap_p3">
+                            <div class="s_w_i3">
+                                <a href="#">
+                                    <img src="./img/osl_main_st_th5.jpg">
+                                <div class="s_w_t3">
+                                    <h6>오설록<br>1979</h6>
+                                    <p>브랜드의 격을 한 단계 끌어올린<br>오설록의 프리미엄 티룸</p>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide_wrap_p3">
+                            <div class="s_w_i3">
+                                <a href="#">
+                                    <img src="./img/osl_main_st_th3.jpg">
+                                <div class="s_w_t3">
+                                    <h6>오설록<br>티하우스 한남점</h6>
+                                    <p>브랜드의 격을 한 단계 끌어올린<br>오설록의 프리미엄 티룸</p>
+                                </div>
+                            </a>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="f_b_bt2">
-                        <button type="button" title="notice"><img src="./img/main_next_btn.png"></button>
-                    </div>
-                
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
+
                 <div class="sd_bt">
                     <button type="button" title="plus_">
                         <span>전체 매장 둘러보기</span>
@@ -430,6 +623,27 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            var swiper = new Swiper(".haha", {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              loop: true,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              on:{
+                    slideChange:function(e){
+                    console.log(e.realIndex)
+                    }
+                }
+            });
+          </script>
 
             <div class="gotop">
                 <a href="#"><img src="./img/btn_goTop.png"></a>
@@ -465,7 +679,9 @@
     </div>
 
     <div class="mb_foot2">
-        <div class="foot2_mb1"><p>오설록 사업자 정보확인</p></div>
+        <div class="foot2_mb1">
+            <p>오설록 사업자 정보확인</p>
+        </div>
         <div class="foot2_mb2">
             <div class="foot2_mb3">
                 <p>(주)오설록<br>
@@ -493,6 +709,12 @@
             </div>
         </div>
     </div>
+    <script>
+        $('.foot2_mb1 p').on('click',function(){
+         $('.foot2_mb2').stop().slideToggle(0);
+        })
+        
+    </script>
 
     <div class="mb_foot_li">
         <ul>

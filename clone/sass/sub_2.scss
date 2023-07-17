@@ -22,9 +22,12 @@ main{
     }
 
     .mb_header{
-        margin: 15px;
+        padding: 15px;
         display: flex;
-        justify-content: center;
+        width: 100%;
+        background-color: white;
+        position: fixed; top: 0;
+        z-index: 2;
         .mb{
             display: flex;
             justify-content: space-between;
@@ -207,7 +210,7 @@ main{
         color: #7b7b7b;
     }
     .foot2_mb2{
-        
+        display: none;
         background: #fafafa;
         padding: 20px;
         color: #7b7b7b;
@@ -273,7 +276,7 @@ main{
         }
     }
     .s2_main{
-    
+    margin-top: 50px;
         .s2_bn{
             position: relative;
             
@@ -581,6 +584,7 @@ main{
     justify-content: center;
     font-family: 'Arita-dotum-Medium';
     .qna_back{
+        width: 100%;
         p{
             font-size: 18px;
             padding: 20px;
@@ -596,9 +600,16 @@ main{
                 border-top: 1px solid black;
                 
                 li{
-                    
+                        
                     font-size: 20px;
                     border-bottom: 1px solid #ededed;
+                    .dada2n{
+                        display: none;
+                        background-color: #F6F6F6;
+                        span{
+                            color: #5A7E62;;
+                        }
+                    }
                     button{
                         font-family: 'Arita-dotum-Medium';
                         cursor: pointer;
@@ -619,13 +630,66 @@ main{
                         }
                         div{
                             padding: 10px;
-                            img{
-                                
+                            img{ 
                                 position: absolute; right:20px;
                             }
                         }
+
+                        .acc_table{
+                            font-weight: bold;
+                            white-space: nowrap;
+                             thead {
+                                    th {
+                                        background-color: #87A57C;
+                                        padding: 10px;
+                                        color: #ffffff;
+                                        border-bottom: 1px solid #ddd;
+                                        width: 250px;
+                                        text-align: center;
+                                    }
+                             }
+                            tbody {
+                                th {
+                                    background-color: rgba(202, 226, 192, 0.2);
+                                    color: #333333;
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    text-align: right;
+                                    min-width: 134px;
+                                    padding-right: 10px;
+                                }
+                                td {
+                                    padding: 10px 20px;
+                                    text-align: center;
+                                    font-size: 12px;
+                                    width: 160px;
+                                    border-bottom: 1px solid #dddddd;
+                                    color: #666666;
+                                }
+                                .red{
+                                    color: red;
+                                }
+                            } 
+                            
+                        }
                     }
                 }
+
+                li.active{
+                    button{
+                        img{
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                li:first-of-type{
+                    div{
+                        overflow-x: scroll;
+                        width: 100%;
+                    } 
+                }
+                
             }
         }
     }
@@ -676,9 +740,12 @@ main{
     }
 
     .mb_header{
-        margin: 15px;
+        padding: 15px;
         display: flex;
-        justify-content: center;
+        width: 100%;
+        background-color: white;
+        position: fixed; top: 0;
+        z-index: 2;
         .mb{
             display: flex;
             justify-content: space-between;
@@ -861,7 +928,7 @@ main{
         color: #7b7b7b;
     }
     .foot2_mb2{
-        
+        display: none;
         background: #fafafa;
         padding: 20px;
         color: #7b7b7b;
@@ -1258,9 +1325,16 @@ main{
                 border-bottom: 1px solid black;
                 border-top: 1px solid black;
                 li{
-                    
+                        
                     font-size: 20px;
                     border-bottom: 1px solid #ededed;
+                    .dada2n{
+                        display: none;
+                        background-color: #F6F6F6;
+                        span{
+                            color: #5A7E62;;
+                        }
+                    }
                     button{
                         font-family: 'Arita-dotum-Medium';
                         cursor: pointer;
@@ -1281,13 +1355,57 @@ main{
                         }
                         div{
                             padding: 10px;
-                            img{
-                                
+                            img{ 
                                 position: absolute; right:20px;
                             }
                         }
+                    
+                        .acc_table{
+                            font-weight: bold;
+                             thead {
+                                    th {
+                                        background-color: #87A57C;
+                                        padding: 10px;
+                                        color: #ffffff;
+                                        border-bottom: 1px solid #ddd;
+                                        width: 250px;
+                                        text-align: center;
+                                    }
+                             }
+                            tbody {
+                                th {
+                                    background-color: rgba(202, 226, 192, 0.2);
+                                    color: #333333;
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    text-align: right;
+                                    min-width: 134px;
+                                    padding-right: 10px;
+                                }
+                                td {
+                                    padding: 10px 20px;
+                                    text-align: center;
+                                    font-size: 12px;
+                                    width: 160px;
+                                    border-bottom: 1px solid #dddddd;
+                                    color: #666666;
+                                }
+                                .red{
+                                    color: red;
+                                }
+                            } 
+                            
+                        }
                     }
                 }
+                 li.active{
+                        button{
+                            img{
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                
             }
         }
     }
@@ -1676,6 +1794,8 @@ main{
                 
             }
             .qna_list{
+                display: flex;
+                justify-content: center;
                 ul{
                     width: 1100px;
                     list-style-type: none;
@@ -1686,38 +1806,95 @@ main{
                         
                         font-size: 20px;
                         border-bottom: 1px solid #ededed;
+                        .dada2n{
+                            display: none;
+                            background-color: #F6F6F6;
+                            span{
+                                color: #5A7E62;;
+                            }
+                        }
                         button{
                             font-family: 'Arita-dotum-Medium';
                             cursor: pointer;
                             position: relative;
                             display: flex;
-                            align-items: center;
-                            width: 1100px;
-                            height: 80px;
+                            padding: 20px;
+                            width: 100%;
                             background-color: transparent;
                             border: none;
                             span{
                                 font-size: 18px;
                                 color: #999;
-                                margin: 0 10px;
-                                margin-left: 30px;
+                                padding-right: 10px;
                             }
                             h2{
+                               text-align: left;
                                 font-size: 14px;
                             }
                             div{
-                                img{
+                                padding: 10px;
+                                img{ 
                                     position: absolute; right:20px;
                                 }
                             }
+                            .acc_table{
+                                font-weight: bold;
+                                 thead {
+                                        th {
+                                            background-color: #87A57C;
+                                            padding: 10px;
+                                            color: #ffffff;
+                                            border-bottom: 1px solid #ddd;
+                                            width: 250px;
+                                            text-align: center;
+                                        }
+                                 }
+                                tbody {
+                                    th {
+                                        background-color: rgba(202, 226, 192, 0.2);
+                                        color: #333333;
+                                        font-weight: 500;
+                                        font-size: 12px;
+                                        text-align: right;
+                                        min-width: 134px;
+                                        padding-right: 10px;
+                                    }
+                                    td {
+                                        padding: 10px 20px;
+                                        text-align: center;
+                                        font-size: 12px;
+                                        width: 160px;
+                                        border-bottom: 1px solid #dddddd;
+                                        color: #666666;
+                                    }
+                                    .red{
+                                        color: red;
+                                    }
+                                } 
+                                
+                            }
+                        }
+                       
+                    }
+                    li.active{
+                        button{
+                            img{
+                                transform: rotate(180deg);
+                            }
                         }
                     }
+
+                    
+                        }  
+                    }
+
+                
                 }
             }
         }
     
-    }
-}
+    
+
 
 @media(min-width:1280px){
     .dada_notice{
