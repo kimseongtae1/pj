@@ -802,7 +802,7 @@
     margin-top: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
 }
 
@@ -1730,7 +1730,7 @@
     margin-top: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
 }
 .slide_wrap_p1{

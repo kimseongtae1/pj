@@ -267,6 +267,18 @@
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
                   },
+                  breakpoints: { //반응형
+                    // 화면의 넓이가 320px 이상일 때
+                    320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                    },
+                    // 화면의 넓이가 1280px 이상일 때
+                    1280: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                    }
+                },
                 });
               </script>
 
@@ -463,7 +475,8 @@
                 window.addEventListener('scroll', function(){
 
                     secArr.forEach(function(secPos,k){
-                        if(secPos.y - window.innerHeight/2.75 < window.pageYOffset){
+                        
+                        if(secPos.y - window.innerHeight/4 < window.pageYOffset){
                             menuFun(k);
                         }
                     });
@@ -478,6 +491,8 @@
                     elSection[k].scrollIntoView(
                         {behavior:"smooth", block:"center"}
                     );
+                    
+                   
                 }
         })
 
