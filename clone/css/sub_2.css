@@ -874,10 +874,8 @@ main {
   }
   .s2_main .s2_bn .s2_moimg img {
     height: 540px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: top;
-       object-position: top;
+    object-fit: cover;
+    object-position: top;
     width: 100%;
   }
   .s2_main .s2_bn .s2_box {
@@ -1094,8 +1092,7 @@ main {
   }
   .dada_life .life_size .life_flex .flex_1 .light_m img {
     height: 190px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     width: 100%;
   }
   .dada_life .life_size .life_flex .flex_1 .life_ab1 {
@@ -1125,8 +1122,7 @@ main {
   }
   .dada_life .life_size .life_flex .flex_2 .deil_m img {
     height: 190px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     width: 100%;
   }
   .dada_life .life_size .life_flex .flex_2 .life_ab2 {
@@ -1330,8 +1326,7 @@ main {
   .s2_main .s2_bn .s2_img img {
     width: 100%;
     height: 540px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .s2_main .s2_bn .s2_box {
     position: absolute;
@@ -1881,4 +1876,4 @@ main {
   .foot_mb_last {
     display: none;
   }
-}/*# sourceMappingURL=sub_2.css.map */
+}
