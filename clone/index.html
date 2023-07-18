@@ -374,8 +374,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next pc"></div>
+                <div class="swiper-button-prev pc"></div>
+                <div class="swiper-pagination mo"></div>
             </div>
 
             <div class="plus">
@@ -386,18 +387,35 @@
 
             <script>
                 var swiper = new Swiper(".slide1", {
-                  slidesPerView: 5,
-                  spaceBetween: 30,
-                  loop: true,
-                  autoplay: {
-                    delay: 3000, //add
-                    disableOnInteraction: false,
-                  },
-                  navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                  },
+                    slidesPerView: 1,
+                    slidesPerColumnFill: 'column',
+                     grid: {
+                     rows: 3,
+                     },
+                    spaceBetween: 10, 
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                    },
+                  breakpoints: {
+                    1280: {
+                        loop:true,
+                        grid: {
+                            rows: 0,
+                        },
+                        slidesPerView: 5,
+                        spaceBetween: 30,
+                        autoplay: {
+                            delay: 3000,
+                            disableOnInteraction: false,
+                    },
+                    },           
+                  }
                 });
+                
               </script>
 
             <div class="total_today">
@@ -626,8 +644,9 @@
 
         <script>
             var swiper = new Swiper(".haha", {
-              slidesPerView: 3,
+              slidesPerView: 'auto',
               spaceBetween: 30,
+              centeredSlides: true,
               loop: true,
               pagination: {
                 el: ".swiper-pagination",
@@ -636,6 +655,12 @@
               navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
+              },
+              breakpoints: {
+                1280: {
+                    centeredSlides: false,
+                    slidesPerView: 3,
+                }
               },
             });
           </script>
