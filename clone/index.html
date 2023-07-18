@@ -219,14 +219,31 @@
         </script>
        
         <section>
-                <div class="sect1">
-                    <div class="main_notice">
-                        <p>공지사항</p>
-                        <a href="#"><p>[공지] 하하</p></a>
-                        <button type="button" title="notice"><img src="./img/notice_more_btn.png"></button>
+                <div class="sect1 swiper mySwiper">
+                    <p>공지사항</p>
+                    <div class="main_notice swiper-wrapper">
+                        <div class="swiper-slide tears"><a href="#"><p>[공지] 하</p></a></div>
+                        <div class="swiper-slide tears"><a href="#"><p>[공지] 하하</p></a></div>
+                        <div class="swiper-slide tears"><a href="#"><p>[공지] 하하하</p></a></div>
+                        <div class="swiper-slide tears"><a href="#"><p>[공지] 하하하하</p></a></div>
+                        <div class="swiper-slide tears"><a href="#"><p>[공지] 하하하하하</p></a></div>
+                        <div class="swiper-slide tears"><a href="#"><p>[공지] 하하하하하하</p></a></div>
                     </div>
+                    <button type="button" title="notice"><img src="./img/notice_more_btn.png"></button>
                 </div>
-
+                <script>
+            var swiper = new Swiper(".sect1", {
+                                direction:'vertical',
+                                spaceBetween: 30,
+                                loop:true,
+                                centeredSlides: true,
+                                autoplay: {
+                                delay: 2500,
+                                disableOnInteraction: false,
+                                }
+                  });
+                </script>
+                
             
                 <div class="tit_box">
                     <div class="tit_tit">

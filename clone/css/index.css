@@ -264,45 +264,46 @@
         display: none;
     }
 
-    .sect1{
+    .swiper.sect1{
         width: 95%;
         height: 48px;
         margin: 30px auto;
-        
-    
         display: flex;
         justify-content: center;
+        align-items: center;
         background-color: #f6f6f6;
     }
     
     .main_notice{
         width: 100%;
+    }
+    .swiper-slide.tears{
         display: flex;
         align-items: center;
     }
     
-    .main_notice > p{
-        width: 20%;
+    .sect1 >  p{
+        width: 30%;
         text-align:center;
         font-size: 14px;
         color: #999999;
     }
     
-    .main_notice > a {
+    .main_notice > div > a {
         font-size: 14px;
         width:70%;
         text-decoration: none;
         color: #000;
     }
     
-    .main_notice > button{
+    .sect1 > button{
         width: 10%;
         border: none;
         background: transparent;
         cursor:pointer;
     }
     
-     .tit_box{
+    .tit_box{
         border-top: 1px solid #ededed;
     }
 
@@ -1230,38 +1231,39 @@
         display: none;
     }
 
-    .sect1{
+    .swiper.sect1{
         width: 95%;
         height: 48px;
         margin: 30px auto;
-        
-    
         display: flex;
         justify-content: center;
+        align-items: center;
         background-color: #f6f6f6;
     }
     
     .main_notice{
         width: 100%;
+    }
+    .swiper-slide.tears{
         display: flex;
         align-items: center;
     }
     
-    .main_notice > p{
+    .sect1 >  p{
         width: 20%;
         text-align:center;
         font-size: 14px;
         color: #999999;
     }
     
-    .main_notice > a {
+    .main_notice > div > a {
         font-size: 14px;
         width:70%;
         text-decoration: none;
         color: #000;
     }
     
-    .main_notice > button{
+    .sect1 > button{
         width: 10%;
         border: none;
         background: transparent;
@@ -2249,40 +2251,45 @@
 } */
 /* ----------------------------------------------------------------------------- */
 @media (min-width:1280px){
-    .sect1{
+    .swiper.sect1{
         width: 1200px;
         height: 48px;
         margin: 50px auto;
-    
         display: flex;
         justify-content: center;
+        align-items: center;
         background-color: #f6f6f6;
     }
     
     .main_notice{
         width: 100%;
+    }
+    .swiper-slide.tears{
         display: flex;
         align-items: center;
     }
     
-    .main_notice > p{
+    .sect1 >  p{
         width: 20%;
-        text-align: center;
+        text-align:center;
+        font-size: 14px;
         color: #999999;
     }
     
-    .main_notice > a{
-        width: 70%;
+    .main_notice > div > a {
+        font-size: 14px;
+        width:70%;
         text-decoration: none;
         color: #000;
     }
     
-    .main_notice > button{
+    .sect1 > button{
         width: 10%;
         border: none;
         background: transparent;
         cursor:pointer;
     }
+    
     
     .tit_tit{
         margin: 0 auto;
