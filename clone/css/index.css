@@ -141,6 +141,18 @@
 }
 
 @media (max-width:480px) {
+    .swiper-button-next.pc2{
+        display: none;
+    }
+    .swiper-button-prev.pc2{
+        display: none;
+    }
+    .swiper-button-next.pc3{
+        display: none;
+    }
+    .swiper-button-prev.pc3{
+        display: none;
+    }
     .osulloc_header{
         display: none;
     }
@@ -1107,6 +1119,18 @@
 }
 }
 @media (min-width:481px) and (max-width:1279px) {
+    .swiper-button-next.pc2{
+        display: none;
+    }
+    .swiper-button-prev.pc2{
+        display: none;
+    }
+    .swiper-button-next.pc3{
+        display: none;
+    }
+    .swiper-button-prev.pc3{
+        display: none;
+    }
     .osulloc_header{
         display: none;
     }
@@ -2341,8 +2365,26 @@
 
 /* ------------------------------------------------------------------------------ */
 @media (min-width:1280px){
+
 .swiper-pagination.mo{
     display: none;
+}
+.swiper-button-prev:after{
+    display: none;
+}
+.swiper-button-next:after{
+    display: none;
+}
+.tjdxo{
+    max-width: 1300px;
+    position: relative;
+    margin: 0 auto;
+}
+.swiper-button-next.pc2{
+    top: 40%;
+}
+.swiper-button-prev.pc2{
+    top: 40%;
 }
 .slide1.swiper{
     width: 1200px;
@@ -2676,11 +2718,14 @@
 
 @media (min-width:1280px){
 .st_m_bn_w{
+    max-width: 1320px;
+    margin: 0 auto;
+    position: relative;
     display: flex;
     justify-content: center;
 }
 .store_main_banner_wrap{
-    width: 1240px;
+    width: 1200px;
     margin-left: 100px;
     margin-bottom: 50px;
 }
@@ -2798,6 +2843,13 @@
     cursor: pointer;
 }
 
+.swiper-button-next.pc3{
+    top: 50%;
+}
+.swiper-button-prev.pc3{
+    left: 5%;
+    top: 50%;
+}
 }
 
 
