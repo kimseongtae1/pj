@@ -68,6 +68,12 @@
 
 /* --------------------------------------------------------------------- */
 @media (min-width:1280px){
+    .swiper .swiper-pagination-bullet {
+        background-color: #000;
+    }
+    .haha .swiper-pagination-bullet {
+        background-color: white;
+    }
     .mb_bn{
         display: none;
     }
@@ -137,10 +143,22 @@
         color: white;
         cursor:pointer;
     }
+    .swiper-button-prev.pc{
+        left: 5%;
+    }
+    .swiper-button-next.pc{
+        right: 5%;
+    }
     
 }
 
 @media (max-width:480px) {
+    .swiper .swiper-pagination-bullet {
+        background-color: #000;
+    }
+    .haha .swiper-pagination-bullet {
+        background-color: white;
+    }
     .swiper-button-next.pc2{
         display: none;
     }
@@ -361,8 +379,7 @@
     }
     .swiper-button-prev.pc{
         display: none;
-    }
-    
+    } 
     .sd1.swiper-wrapper{
         display: flex;
         justify-content: flex-start;
@@ -1119,6 +1136,12 @@
 }
 }
 @media (min-width:481px) and (max-width:1279px) {
+    .swiper .swiper-pagination-bullet {
+        background-color: #000;
+    }
+    .haha .swiper-pagination-bullet {
+        background-color: white;
+    }
     .swiper-button-next.pc2{
         display: none;
     }
@@ -2375,6 +2398,7 @@
 .swiper-button-next:after{
     display: none;
 }
+
 .tjdxo{
     max-width: 1300px;
     position: relative;
@@ -2850,6 +2874,7 @@
     left: 5%;
     top: 50%;
 }
+
 }
 
 

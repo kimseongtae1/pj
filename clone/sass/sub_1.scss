@@ -406,12 +406,21 @@
         overflow: hidden;
         position: relative;
         width: 100%;
+        .swiper-button-next.pc{
+            display: none;
+        }
+        .swiper-button-prev.pc{
+            display: none;
+        }
+       
         .ggood_1{  
             width: 100%;
+            
             .ggood_t{
                 padding-bottom: 20px;
                 line-height: 30px;
                 font-weight: bold;
+                position: relative;
                 .p1_1{
                     font-size: 20px;
                     color: #333;
@@ -420,15 +429,20 @@
                     font-size: 14px;
                     color: #999;
                 }
+                .swiper-pagination.swiper-pagination-bullets.pc{
+                    position: absolute;
+                    top: 50%; left: 85%;
+                    width: 100px;
+                    height: 25px;
+                    z-index: 0;
+                }
+                .swiper-pagination-bullet-active{
+                    background-color: #000;
+                }
             }
             .add{
                 z-index: 0;
-                .swiper-button-next.pc{
-                    display: none;
-                }
-                .swiper-button-prev.pc{
-                    display: none;
-                }
+               
                 .ggood_i{
                     display: flex;  
                     .ggood_img1{
@@ -959,12 +973,20 @@
         padding: 20px;
         overflow: hidden;
         width: 100%;
+        .swiper-button-next.pc{
+            display: none;
+        }
+        .swiper-button-prev.pc{
+            display: none;
+        }
+       
         .ggood_1{  
             width: 100%;
             .ggood_t{
                 padding-bottom: 30px;
                 line-height: 30px;
                 font-weight: bold;
+                position: relative;
                 .p1_1{
                     font-size: 20px;
                     color: #333;
@@ -973,15 +995,20 @@
                     font-size: 14px;
                     color: #999;
                 }
+                .swiper-pagination.swiper-pagination-bullets.pc{
+                    position: absolute;
+                    top: 57%; left:75%;
+                    width: 100px;
+                    height: 25px;
+                    z-index: 0;
+                }
+                .swiper-pagination-bullet-active{
+                    background-color: #000;
+                }
             }
             .add{
                 z-index: 0;
-                .swiper-button-next.pc{
-                    display: none;
-                }
-                .swiper-button-prev.pc{
-                    display: none;
-                }
+               
                 .ggood_i{
                     display: flex;
                     position: relative;
@@ -1289,9 +1316,34 @@
 }
 
 @media(min-width:1280px){
+    .swiper-button-prev:after{
+        display: none;
+    }
+    .swiper-button-next:after{
+        display: none;
+    }
     .ggood{
+        position: relative;
         width: 1280px;
         margin: 0 auto;
+        .swiper-button-prev.pc{
+            position: absolute;
+            top:50%; left: -5%;
+        }
+        .swiper-button-next.pc{
+            position: absolute;
+            top:50%; right: -5%;
+        }
+        .swiper-pagination.pc{
+            width: 100px;
+            height: 25px;
+            position: absolute;
+            top: 10%; transform: translateX(1150px);
+            .swiper-pagination-bullet-active{
+                background-color: #000;
+            }
+        }
+        
         .ggood_1{  
             width: 100%;
             margin-top: 50px;
@@ -1305,60 +1357,62 @@
                     color: #999;
                 }
             }
-            .ggood_i{
-                display: flex;
-                position: relative;
-                .ggood_img1{
+                .ggood_i{
+                    display: flex;
                     position: relative;
-                    margin: 30px;
-                    width: 100%;
-                    cursor: pointer;
-                    .gg_mo1{
-                        display: none;
+                    .ggood_img1{
+                        position: relative;
+                        margin: 30px;
+                        width: 100%;
+                        cursor: pointer;
+                        .gg_mo1{
+                            display: none;
+                        }
+                        .ggood_ti1{
+                            position: absolute; left: 5%; top: 65%;
+                            color: black;
+                            font-weight:bold ;
+                            p:nth-of-type(1){
+                                font-size: 22px;
+                            }
+                            p:nth-of-type(2){
+                                font-size: 16px;
+                                margin: 20px 0;
+                            }
+                            p:nth-of-type(3){
+                                font-size: 22px;
+                            }
+                        }
                     }
-                    .ggood_ti1{
-                        position: absolute; left: 5%; top: 65%;
-                        color: black;
-                        font-weight:bold ;
-                        p:nth-of-type(1){
-                            font-size: 22px;
+                    .ggood_img2{
+                        width: 100%;
+                        position: relative;
+                        margin: 30px;
+                        margin-left: 0;
+                        cursor: pointer;
+                        .gg_mo2{
+                            display: none;
                         }
-                        p:nth-of-type(2){
-                            font-size: 16px;
-                            margin: 20px 0;
-                        }
-                        p:nth-of-type(3){
-                            font-size: 22px;
+                        .ggood_ti2{
+                            position: absolute; left: 5%; top: 65%;
+                            color: black;
+                            font-weight:bold ;
+                            p:nth-of-type(1){
+                                font-size: 22px;
+                            }
+                            p:nth-of-type(2){
+                                font-size: 16px;
+                                margin: 20px 0;
+                            }
+                            p:nth-of-type(3){
+                                font-size: 22px;
+                            }
                         }
                     }
+        
                 }
-                .ggood_img2{
-                    width: 100%;
-                    position: relative;
-                    margin: 30px;
-                    margin-left: 0;
-                    cursor: pointer;
-                    .gg_mo2{
-                        display: none;
-                    }
-                    .ggood_ti2{
-                        position: absolute; left: 5%; top: 65%;
-                        color: black;
-                        font-weight:bold ;
-                        p:nth-of-type(1){
-                            font-size: 22px;
-                        }
-                        p:nth-of-type(2){
-                            font-size: 16px;
-                            margin: 20px 0;
-                        }
-                        p:nth-of-type(3){
-                            font-size: 22px;
-                        }
-                    }
-                }
-    
-            }
+            
+            
     
         }
     }

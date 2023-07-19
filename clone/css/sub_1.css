@@ -347,6 +347,12 @@
     position: relative;
     width: 100%;
   }
+  .ggood .swiper-button-next.pc {
+    display: none;
+  }
+  .ggood .swiper-button-prev.pc {
+    display: none;
+  }
   .ggood .ggood_1 {
     width: 100%;
   }
@@ -354,6 +360,7 @@
     padding-bottom: 20px;
     line-height: 30px;
     font-weight: bold;
+    position: relative;
   }
   .ggood .ggood_1 .ggood_t .p1_1 {
     font-size: 20px;
@@ -363,14 +370,19 @@
     font-size: 14px;
     color: #999;
   }
-  .ggood .ggood_1 .add {
+  .ggood .ggood_1 .ggood_t .swiper-pagination.swiper-pagination-bullets.pc {
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    width: 100px;
+    height: 25px;
     z-index: 0;
   }
-  .ggood .ggood_1 .add .swiper-button-next.pc {
-    display: none;
+  .ggood .ggood_1 .ggood_t .swiper-pagination-bullet-active {
+    background-color: #000;
   }
-  .ggood .ggood_1 .add .swiper-button-prev.pc {
-    display: none;
+  .ggood .ggood_1 .add {
+    z-index: 0;
   }
   .ggood .ggood_1 .add .ggood_i {
     display: flex;
@@ -841,6 +853,12 @@
     overflow: hidden;
     width: 100%;
   }
+  .ggood .swiper-button-next.pc {
+    display: none;
+  }
+  .ggood .swiper-button-prev.pc {
+    display: none;
+  }
   .ggood .ggood_1 {
     width: 100%;
   }
@@ -848,6 +866,7 @@
     padding-bottom: 30px;
     line-height: 30px;
     font-weight: bold;
+    position: relative;
   }
   .ggood .ggood_1 .ggood_t .p1_1 {
     font-size: 20px;
@@ -857,14 +876,19 @@
     font-size: 14px;
     color: #999;
   }
-  .ggood .ggood_1 .add {
+  .ggood .ggood_1 .ggood_t .swiper-pagination.swiper-pagination-bullets.pc {
+    position: absolute;
+    top: 57%;
+    left: 75%;
+    width: 100px;
+    height: 25px;
     z-index: 0;
   }
-  .ggood .ggood_1 .add .swiper-button-next.pc {
-    display: none;
+  .ggood .ggood_1 .ggood_t .swiper-pagination-bullet-active {
+    background-color: #000;
   }
-  .ggood .ggood_1 .add .swiper-button-prev.pc {
-    display: none;
+  .ggood .ggood_1 .add {
+    z-index: 0;
   }
   .ggood .ggood_1 .add .ggood_i {
     display: flex;
@@ -1150,9 +1174,36 @@
   }
 }
 @media (min-width: 1280px) {
+  .swiper-button-prev:after {
+    display: none;
+  }
+  .swiper-button-next:after {
+    display: none;
+  }
   .ggood {
+    position: relative;
     width: 1280px;
     margin: 0 auto;
+  }
+  .ggood .swiper-button-prev.pc {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+  }
+  .ggood .swiper-button-next.pc {
+    position: absolute;
+    top: 50%;
+    right: -5%;
+  }
+  .ggood .swiper-pagination.pc {
+    width: 100px;
+    height: 25px;
+    position: absolute;
+    top: 10%;
+    transform: translateX(1150px);
+  }
+  .ggood .swiper-pagination.pc .swiper-pagination-bullet-active {
+    background-color: #000;
   }
   .ggood .ggood_1 {
     width: 100%;
