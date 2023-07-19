@@ -55,6 +55,17 @@
             </div>
 
         </div>
+        <script>
+                 
+           $(window).on('scroll', function(){
+             if($(window).scrollTop() > $('.banner_main').innerHeight()){
+                $('.inner_box').addClass('active');
+             }else{
+                 $('.inner_box').removeClass('active');
+             }
+           });
+
+        </script>
 
         <div class="mb_header">
             <div class="mb">
