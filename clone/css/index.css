@@ -22,7 +22,7 @@
     
         display: flex;
         justify-content: center;
-        transition: .5s;
+        transition: .2s;
     }
     
     .osulloc_header .inner_box .left_box{
