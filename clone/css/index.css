@@ -2507,7 +2507,21 @@
     justify-content: flex-start;
     
 }
-
+.item1:hover img {
+    transform: scale(1.1);
+}
+.item2:hover img {
+    transform: scale(1.1);
+}
+.item3:hover img {
+    transform: scale(1.1);
+}
+.item4:hover img {
+    transform: scale(1.1);
+}
+.item5:hover img {
+    transform: scale(1.1);
+}
 .item1.swiper-slide {
     display: flex;
     flex-direction: column;
