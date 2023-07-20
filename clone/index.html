@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
+    <script defer src="./js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
 </head>
@@ -27,7 +29,7 @@
                         <img src="./img/logo_black.png" alt="오설록 로고">
                     </a>
                     
-                    <a href="./sub_3.html"> 제품 </a>
+                    <a href="#"> 제품 </a>
                     <a href="./sub_1.html"> 선물추천 </a>
                     <a href="./sub_2.html"> 다다일상 </a>
                     <a href="#"> 브랜드 </a>
@@ -46,6 +48,7 @@
                     <a href="#">
                         <img src="./img/icon_more_black.png" alt="오설록 로고">
                     </a>
+                  
 
                     <a href="#"> 로그인 </a>
 
@@ -55,17 +58,6 @@
             </div>
 
         </div>
-        <script>
-                 
-           $(window).on('scroll', function(){
-             if($(window).scrollTop() > $('.banner_main').innerHeight()){
-                $('.inner_box').addClass('active');
-             }else{
-                 $('.inner_box').removeClass('active');
-             }
-           });
-
-        </script>
 
         <div class="mb_header">
             <div class="mb">
@@ -113,23 +105,7 @@
         </div>
         
     </header>
-    <script>
-         const elR = document.querySelector('.mb_right a:last-of-type'),
-               elUl = document.querySelector('.mb_none'),
-               elC = document.querySelector('.mb_close');
-        
-
-          elR.onclick = function(v,k){
-              elUl.classList.add('act');
-          }
-
-
-          elC.onclick = function(v,k){
-              elUl.classList.remove('act');
-          }
-        
-    </script>
-
+   
 <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
 
     <main>
@@ -200,32 +176,6 @@
         <div class="swiper-button-prev pc"><img src="./img/main_prev_btn.png"></div>
         <div class="swiper-pagination"></div>
     </div>
-
-    <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper(".banner_main", {
-                slidesPerView: 1,
-                spaceBetween: 30,
-                loop: true,
-                effect: "fade",
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            });
-
-        </script>
        
         <section>
                 <div class="sect1 swiper mySwiper">
@@ -240,18 +190,7 @@
                     </div>
                     <button type="button" title="notice"><img src="./img/notice_more_btn.png"></button>
                 </div>
-                <script>
-                     var swiper = new Swiper(".sect1", {
-                                direction:'vertical',
-                                spaceBetween: 30,
-                                loop:true,
-                                centeredSlides: true,
-                                autoplay: {
-                                delay: 2500,
-                                disableOnInteraction: false,
-                                }
-                  });
-                </script>
+                
                 
             <div class="tjdxo">
                 <div class="tit_box">
@@ -261,190 +200,306 @@
                         </div>
                         <ul class="box_list">
                             <li class="tab_item">베스트</li>
-                            <li class="tab_item_on">이번 주 인기 제품</li>
+                            <li class="tab_item">이번 주 인기 제품</li>
                         </ul>
                     </div>
                 </div>
             
+            <div class="contents">
+                <div class="swiper mySwiper slide1">
+                <div class="swiper-button-next pc2"><img src="./img/main_next_btn.png"></div>
+                <div class="swiper-button-prev pc2"><img src="./img/main_prev_btn.png"></div>
+                    <div class = "swiper-wrapper sd1">
+                        <div class="swiper-slide item1">
+                            <a href="#">
+                                <img src="./img/304_20220830150343985QN.png">
+                            </a>
+                            <div class="item1_txt">
+                                <a href="#">찬물 루이보스 티</a>
+                            <p>8,550원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item2">
+                            <a href="#">
+                                <img src="./img/304_20220818110344724FX.png">
+                            </a>
+                            <div class="item2_txt">
+                                <a href="#">
+                                    <p>세작 40g</p>
+                                </a>
+                                <p>17,000원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item3">
+                            <a href="#">
+                                <img src="./img/304_20200513135231693GB.png">
+                            </a>
+                            <div class="item3_txt">
+                                <a href="#">
+                                    <p>메모리 인 제주 20입</p>
+                                </a>
+                                <p>38,000원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item4">
+                            <a href="#">
+                                <img src="./img/304_20201027143838409ZN.png">
+                            </a>
+                            <div class="item4_txt">
+                                <a href="#">
+                                    <p>프리미엄 티 컬렉션</p>
+                                </a>
+                                <p>28,000원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item5">
+                            <a href="#">
+                                <img src="./img/304_20221114150238508QK.png">
+                            </a>
+                            <div class="item5_txt">
+                                <a href="#">
+                                    <p>마스터 블렌드 (+다구 키트 증정)</p>
+                                </a>
+                                <p>55,000원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item5">
+                            <a href="#">
+                                <img src="./img/304_20221229163433071ZU.png">
+                            </a>
+                            <div class="item5_txt">
+                                <a href="#">
+                                    <p>찬물 녹차</p>
+                                </a>
+                                <p>9,500원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item5">
+                            <a href="#">
+                                <img src="./img/304_20200110161302294EE.png">
+                            </a>
+                            <div class="item5_txt">
+                                <a href="#">
+                                    <p>달빛걷기 20입</p>
+                                </a>
+                                <p>25,000원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item5">
+                            <a href="#">
+                                <img src="./img/304_20230525140314297OQ.png">
+                            </a>
+                            <div class="item5_txt">
+                                <a href="#">
+                                    <p>콤부차 애플파인 10입</p>
+                                </a>
+                                <p>8,000원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item5">
+                            <a href="#">
+                                <img src="./img/304_20221226130249926MH.png">
+                            </a>
+                            <div class="item5_txt">
+                                <a href="#">
+                                    <p>티 모먼트 (+다구 키트 증정)</p>
+                                </a>
+                                <p>35,000원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item5">
+                            <a href="#">
+                                <img src="./img/304_20230710115631648HY.png">
+                            </a>
+                            <div class="item5_txt">
+                                <a href="#">
+                                    <p>달빛섬&얼그레이 웨하스 (+추가 증정)</p>
+                                </a>
+                                <p>18,500원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item5">
+                            <a href="#">
+                                <img src="./img/304_20230710115606101WB.png">
+                            </a>
+                            <div class="item5_txt">
+                                <a href="#">
+                                    <p>영귤섬&그린티 웨하스 (+추가 증정)</p>
+                                </a>
+                                <p>18,500원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item5">
+                            <a href="#">
+                                <img src="./img/304_20230710115532622ZC.png">
+                            </a>
+                            <div class="item5_txt">
+                                <a href="#">
+                                    <p>노을섬&녹차 와플 (+추가 증정)</p>
+                                </a>
+                                <p>18,500원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination mo"></div>
+                    <div class="plus">
+                        <button type="button" title="plus_">
+                            <span>더보기</span>
+                        </button>
+                    </div>
+                    
+    
+                </div>
 
-            <div class="swiper mySwiper slide1">
-                <div class = "swiper-wrapper sd1">
-                    <div class="swiper-slide item1">
-                        <a href="#">
-                            <img src="./img/304_20220830150343985QN.png">
-                        </a>
-                        <div class="item1_txt">
-                            <a href="#">찬물 루이보스 티</a>
-                        <p>8,550원</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide item2">
-                        <a href="#">
-                            <img src="./img/304_20220818110344724FX.png">
-                        </a>
-                        <div class="item2_txt">
+                <div class="swiper mySwiper slide1">
+                <div class="swiper-button-next pc2"><img src="./img/main_next_btn.png"></div>
+                <div class="swiper-button-prev pc2"><img src="./img/main_prev_btn.png"></div>
+                    <div class = "swiper-wrapper sd1">
+                        <div class="swiper-slide item1">
                             <a href="#">
-                                <p>세작 40g</p>
+                                <img src="./img/304_20230710102114375CG.png">
                             </a>
-                            <p>17,000원</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide item3">
-                        <a href="#">
-                            <img src="./img/304_20200513135231693GB.png">
-                        </a>
-                        <div class="item3_txt">
-                            <a href="#">
-                                <p>메모리 인 제주 20입</p>
-                            </a>
-                            <p>38,000원</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide item4">
-                        <a href="#">
-                            <img src="./img/304_20201027143838409ZN.png">
-                        </a>
-                        <div class="item4_txt">
-                            <a href="#">
-                                <p>프리미엄 티 컬렉션</p>
-                            </a>
-                            <p>28,000원</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide item5">
-                        <a href="#">
-                            <img src="./img/304_20221114150238508QK.png">
-                        </a>
-                        <div class="item5_txt">
-                            <a href="#">
-                                <p>마스터 블렌드 (+다구 키트 증정)</p>
-                            </a>
-                            <p>55,000원</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide item5">
-                        <a href="#">
-                            <img src="./img/304_20221229163433071ZU.png">
-                        </a>
-                        <div class="item5_txt">
-                            <a href="#">
-                                <p>찬물 녹차</p>
-                            </a>
-                            <p>9,500원</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide item5">
-                        <a href="#">
-                            <img src="./img/304_20200110161302294EE.png">
-                        </a>
-                        <div class="item5_txt">
-                            <a href="#">
-                                <p>달빛걷기 20입</p>
-                            </a>
-                            <p>25,000원</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide item5">
-                        <a href="#">
-                            <img src="./img/304_20230525140314297OQ.png">
-                        </a>
-                        <div class="item5_txt">
-                            <a href="#">
-                                <p>콤부차 애플파인 10입</p>
-                            </a>
+                            <div class="item1_txt">
+                                <a href="#">콤부차 리치피치 10입</a>
                             <p>8,000원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item2">
+                            <a href="#">
+                                <img src="./img/304_20230407170811219YW.png">
+                            </a>
+                            <div class="item2_txt">
+                                <a href="#">
+                                    <p>콤부차 피치동백&제주영귤 8입</p>
+                                </a>
+                                <p>27,200원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item3">
+                            <a href="#">
+                                <img src="./img/304_20200513135231693GB.png">
+                            </a>
+                            <div class="item3_txt">
+                                <a href="#">
+                                    <p>메모리 인 제주 20입</p>
+                                </a>
+                                <p>38,000원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item4">
+                            <a href="#">
+                                <img src="./img/304_20220425141035575OX.png">
+                            </a>
+                            <div class="item4_txt">
+                                <a href="#">
+                                    <p>제주 녹차 크레이프 케이크</p>
+                                </a>
+                                <p>47,500원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item5">
+                            <a href="#">
+                                <img src="./img/304_20221114150238508QK.png">
+                            </a>
+                            <div class="item5_txt">
+                                <a href="#">
+                                    <p>마스터 블렌드 (+다구 키트 증정)</p>
+                                </a>
+                                <p>55,000원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item5">
+                            <a href="#">
+                                <img src="./img/304_20220120172110895WE.png">
+                            </a>
+                            <div class="item5_txt">
+                                <a href="#">
+                                    <p>스트로베리 그린티 케이크</p>
+                                </a>
+                                <p>34,000원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item5">
+                            <a href="#">
+                                <img src="./img/304_20200110161302294EE.png">
+                            </a>
+                            <div class="item5_txt">
+                                <a href="#">
+                                    <p>달빛걷기 20입</p>
+                                </a>
+                                <p>25,000원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item5">
+                            <a href="#">
+                                <img src="./img/304_20220921130815154IN.png">
+                            </a>
+                            <div class="item5_txt">
+                                <a href="#">
+                                    <p>그린티 롤케이크</p>
+                                </a>
+                                <p>24,000원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item5">
+                            <a href="#">
+                                <img src="./img/304_20221226130249926MH.png">
+                            </a>
+                            <div class="item5_txt">
+                                <a href="#">
+                                    <p>티 모먼트 (+다구 키트 증정)</p>
+                                </a>
+                                <p>35,000원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item5">
+                            <a href="#">
+                                <img src="./img/304_20230710115631648HY.png">
+                            </a>
+                            <div class="item5_txt">
+                                <a href="#">
+                                    <p>달빛섬&얼그레이 웨하스 (+추가 증정)</p>
+                                </a>
+                                <p>18,500원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item5">
+                            <a href="#">
+                                <img src="./img/304_20230518093910475VK.png">
+                            </a>
+                            <div class="item5_txt">
+                                <a href="#">
+                                    <p>제주 순수녹차</p>
+                                </a>
+                                <p>9,500원</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item5">
+                            <a href="#">
+                                <img src="./img/304_20230710115532622ZC.png">
+                            </a>
+                            <div class="item5_txt">
+                                <a href="#">
+                                    <p>노을섬&녹차 와플 (+추가 증정)</p>
+                                </a>
+                                <p>18,500원</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-slide item5">
-                        <a href="#">
-                            <img src="./img/304_20221226130249926MH.png">
-                        </a>
-                        <div class="item5_txt">
-                            <a href="#">
-                                <p>티 모먼트 (+다구 키트 증정)</p>
-                            </a>
-                            <p>35,000원</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide item5">
-                        <a href="#">
-                            <img src="./img/304_20230710115631648HY.png">
-                        </a>
-                        <div class="item5_txt">
-                            <a href="#">
-                                <p>달빛섬&얼그레이 웨하스 (+추가 증정)</p>
-                            </a>
-                            <p>18,500원</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide item5">
-                        <a href="#">
-                            <img src="./img/304_20230710115606101WB.png">
-                        </a>
-                        <div class="item5_txt">
-                            <a href="#">
-                                <p>영귤섬&그린티 웨하스 (+추가 증정)</p>
-                            </a>
-                            <p>18,500원</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide item5">
-                        <a href="#">
-                            <img src="./img/304_20230710115532622ZC.png">
-                        </a>
-                        <div class="item5_txt">
-                            <a href="#">
-                                <p>노을섬&녹차 와플 (+추가 증정)</p>
-                            </a>
-                            <p>18,500원</p>
-                        </div>
+                    
+                    <div class="swiper-pagination mo"></div>
+                    <div class="plus">
+                        <button type="button" title="plus_">
+                            <span>더보기</span>
+                        </button>
                     </div>
                 </div>
-                
-                <div class="swiper-pagination mo"></div>
             </div>
 
-            <div class="plus">
-                <button type="button" title="plus_">
-                    <span>더보기</span>
-                </button>
-            </div>
-            <div class="swiper-button-next pc2"><img src="./img/main_next_btn.png"></div>
-            <div class="swiper-button-prev pc2"><img src="./img/main_prev_btn.png"></div>
+           
+        
         </div>
-
-            <script>
-                var swiper = new Swiper(".slide1", {
-                    slidesPerView: 1,
-                    slidesPerColumnFill: 'column',
-                     grid: {
-                     rows: 3,
-                     },
-                    spaceBetween: 10, 
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                    pagination: {
-                        el: ".swiper-pagination",
-                    },
-                  breakpoints: {
-                    1280: {
-                        loop:true,
-                        grid: {
-                            rows: 0,
-                        },
-                        slidesPerView: 5,
-                        spaceBetween: 30,
-                        autoplay: {
-                            delay: 3000,
-                            disableOnInteraction: false,
-                        },
-                    },           
-                  }
-                });
-                
-              </script>
+        
 
             <div class="total_today">
                 <div class="total_space">
@@ -466,10 +521,15 @@
                                 </div>
                         </div>
                     </a>
+                    <div class="total_time">
+                        
+                    </div>
 
                 </div>
 
             </div>
+
+           
 
 
             <div class="banner_zip">
@@ -671,32 +731,12 @@
             <div class="swiper-button-prev pc3"><img src="./img/main_prev_btn.png"></div>
         </div>
 
-        <script>
-            var swiper = new Swiper(".haha", {
-              slidesPerView: 'auto',
-              spaceBetween: 30,
-              centeredSlides: true,
-              loop: true,
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-              },
-              navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              },
-              breakpoints: {
-                1280: {
-                    centeredSlides: false,
-                    slidesPerView: 3,
-                }
-              },
-            });
-          </script>
+       
 
             <div class="gotop">
                 <a href="#"><img src="./img/btn_goTop.png"></a>
             </div>
+            
 
             
 
@@ -726,11 +766,7 @@
                 </ul>
             </div>
     </div>
-    <script>
-        $('.foot1_mb2 p').on('click',function(){
-         $('.foot1_list').stop().slideToggle(0);
-        })  
-    </script>
+  
 
     <div class="mb_foot2">
         <div class="foot2_mb1">
@@ -763,12 +799,7 @@
             </div>
         </div>
     </div>
-    <script>
-        $('.foot2_mb1 p').on('click',function(){
-         $('.foot2_mb2').stop().slideToggle(0);
-        })
-        
-    </script>
+  
 
     <div class="mb_foot_li">
         <ul>

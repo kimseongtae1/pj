@@ -7,7 +7,7 @@
             display: none;
         }
     }
-   
+
    .osulloc_header .inner_box.active{
     background-color: white;
    }
@@ -24,7 +24,14 @@
         justify-content: center;
         transition: .2s;
     }
-    
+.more{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    margin-top: 250px;
+    display: none;
+}
     .osulloc_header .inner_box .left_box{
         display: flex;
         align-items: center;
@@ -71,7 +78,7 @@
 
 /* --------------------------------------------------------------------- */
 @media (min-width:1280px){
-    .swiper .swiper-pagination-bullet {
+    .banner_main .swiper-pagination-bullet {
         background-color: #000;
     }
     .haha .swiper-pagination-bullet {
@@ -156,7 +163,13 @@
 }
 
 @media (max-width:480px) {
-    .swiper .swiper-pagination-bullet {
+    .banner_main .swiper-pagination-bullet {
+        background-color: #000;
+    }
+    .slide1 .swiper-pagination{
+        transform: translateY(-70px);
+    }
+    .slide1 .swiper-pagination-bullet{
         background-color: #000;
     }
     .haha .swiper-pagination-bullet {
@@ -365,7 +378,7 @@
        
     }
     
-    .tab_item_on{
+    .tab_item.on{
         background-color:  #6C801A;
         color: #fff;
         padding: 10px;
@@ -374,6 +387,13 @@
         
     }  
   
+    .mySwiper.slide1.active{
+        display: block;
+    }
+    .mySwiper.slide1{
+        display: none;
+    }
+    
     .slide1 .sd_bt1 > button{
         display: none;
     }
@@ -600,6 +620,18 @@
         border-radius: 50%;
         background-color: #FD5C5C;
         margin-left: 10px;
+    }
+    .total_time{
+        position: absolute; top: 7%; right: 5%;
+        font-size: 22px;
+        color: #6E6672;
+        display: flex;
+        align-items: center;
+    }
+    .total_time > img {
+        width: 16px;
+        margin-right: 6px;
+        display: block;
     }
 
 .bn_txt{
@@ -1139,7 +1171,13 @@
 }
 }
 @media (min-width:481px) and (max-width:1279px) {
-    .swiper .swiper-pagination-bullet {
+    .banner_main .swiper-pagination-bullet {
+        background-color: #000;
+    }
+    .slide1 .swiper-pagination{
+        transform: translateY(-70px);
+    }
+    .slide1 .swiper-pagination-bullet{
         background-color: #000;
     }
     .haha .swiper-pagination-bullet {
@@ -1158,6 +1196,12 @@
         display: none;
     }
     .osulloc_header{
+        display: none;
+    }
+    .mySwiper.slide1.active{
+        display: block;
+    }
+    .mySwiper.slide1{
         display: none;
     }
     .mb_header{
@@ -1349,7 +1393,7 @@
        
     }
     
-    .tab_item_on{
+    .tab_item.on{
         background-color:  #6C801A;
         color: #fff;
         padding: 10px;
@@ -1584,6 +1628,18 @@
         border-radius: 50%;
         background-color: #FD5C5C;
         margin: 0 20px;
+    }
+    .total_time{
+        position: absolute; top: 5%; right: 5%;
+        font-size: 22px;
+        color: #6E6672;
+        display: flex;
+        align-items: center;
+    }
+    .total_time > img {
+        width: 16px;
+        margin-right: 6px;
+        display: block;
     }
 
 .bn_txt{
@@ -2342,9 +2398,9 @@
     
     
     .tit_tit{
-        margin: 0 auto;
+        margin: 0 50px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
     }
     
     .tit_box .box_notice{
@@ -2373,7 +2429,7 @@
         cursor: pointer;
     }
     
-    .tit_box .box_list .tab_item_on {
+    .tit_box .box_list .tab_item.on {
         height: 36px;
         line-height: 36px;
         padding: 0 16px;
@@ -2382,7 +2438,6 @@
         background-color: #6C801A;
         border-radius: 150px;
         text-align: center;
-        margin-right: 500px;
         cursor: pointer;
         
     }
@@ -2401,6 +2456,14 @@
 .swiper-button-next:after{
     display: none;
 }
+.mySwiper.slide1{
+    display: none;
+}
+.mySwiper.slide1.active{
+    display: block;
+}
+
+
 
 .tjdxo{
     max-width: 1300px;
@@ -2408,8 +2471,9 @@
     margin: 0 auto;
 }
 .swiper-button-next.pc2{
-    top: 40%;
+    top: 40%; 
 }
+
 .swiper-button-prev.pc2{
     top: 40%;
 }
@@ -2587,6 +2651,18 @@
     border-radius: 50%;
     background-color: #FD5C5C;
     margin: 0 20px;
+}
+.total_time{
+    position: absolute; top: 15%; right: 5%;
+    font-size: 28px;
+    color: #6E6672;
+    display: flex;
+    align-items: center;
+}
+.total_time > img {
+    width: 22px;
+    margin-right: 6px;
+    display: block;
 }
 }
 
