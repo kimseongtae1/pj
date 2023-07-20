@@ -181,6 +181,15 @@ $('.foot2_mb1 p').on('click',function(){
  $('.foot2_mb2').stop().slideToggle(0);
 })
 
+$(window).on('scroll', function(){
+    if($(window).scrollTop()){
+       $('.gotop').addClass('active');
+    }else{
+        $('.gotop').removeClass('active');
+    }
+  });
+  
+
 
 
 

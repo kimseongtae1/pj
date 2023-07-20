@@ -4,6 +4,18 @@ main {
 }
 
 @media (max-width: 480px) {
+  .gotop {
+    transform: translateX(150%);
+    position: fixed;
+    right: 15px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+  }
+  .gotop.active {
+    transform: translateX(0%);
+  }
   .osulloc_header {
     display: none;
   }
@@ -630,6 +642,18 @@ main {
   }
 }
 @media (min-width: 481px) and (max-width: 1279px) {
+  .gotop {
+    transform: translateX(150%);
+    position: fixed;
+    right: 15px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+  }
+  .gotop.active {
+    transform: translateX(0%);
+  }
   .osulloc_header {
     display: none;
   }
@@ -1257,6 +1281,18 @@ main {
   }
 }
 @media (min-width: 1280px) {
+  .gotop {
+    transform: translateX(150%);
+    position: fixed;
+    right: 15px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+  }
+  .gotop.active {
+    transform: translateX(0%);
+  }
   .mb_header {
     display: none;
   }

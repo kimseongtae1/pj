@@ -163,6 +163,16 @@
 }
 
 @media (max-width:480px) {
+    .gotop{
+        transform: translateX(150%);
+        position: fixed; right:15px; bottom:30px;
+        width: 40px;
+        height: 40px;
+        transition: .5s;
+    }
+    .gotop.active{
+        transform: translateX(0%);
+    }
     .banner_main .swiper-pagination-bullet {
         background-color: #000;
     }
@@ -1171,6 +1181,16 @@
 }
 }
 @media (min-width:481px) and (max-width:1279px) {
+    .gotop{
+        transform: translateX(150%);
+        position: fixed; right:15px; bottom:30px;
+        width: 40px;
+        height: 40px;
+        transition: .5s;
+    }
+    .gotop.active{
+        transform: translateX(0%);
+    }
     .banner_main .swiper-pagination-bullet {
         background-color: #000;
     }
@@ -2960,9 +2980,14 @@
 
 
 .gotop{
+    transform: translateX(150%);
     position: fixed; right:15px; bottom:30px;
     width: 40px;
     height: 40px;
+    transition: .5s;
+}
+.gotop.active{
+    transform: translateX(0%);
 }
 
 /* ----------------------------------------------footer */

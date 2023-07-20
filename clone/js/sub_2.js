@@ -1,3 +1,11 @@
+$(window).on('scroll', function(){
+    if($(window).scrollTop()){
+       $('.gotop').addClass('active');
+    }else{
+        $('.gotop').removeClass('active');
+    }
+  });
+  //dsfa
 
          const elR = document.querySelector('.mb_right a:last-of-type'),
                elUl = document.querySelector('.mb_none'),

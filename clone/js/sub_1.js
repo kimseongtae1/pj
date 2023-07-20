@@ -1,4 +1,11 @@
-
+$(window).on('scroll', function(){
+    if($(window).scrollTop()){
+       $('.gotop').addClass('active');
+    }else{
+        $('.gotop').removeClass('active');
+    }
+  });
+  //sdfa
 const elR = document.querySelector('.mb_right a:last-of-type'),
       elUl = document.querySelector('.mb_none'),
       elC = document.querySelector('.mb_close');
@@ -63,7 +70,7 @@ var swiper = new Swiper(".add", {
 
                     secArr.forEach(function(secPos,k){
                         
-                        if(secPos.y - window.innerHeight/4 < window.pageYOffset){
+                        if(secPos.y - window.innerHeight/4 < window.scrollY){
                             menuFun(k);
                         }
                     });
