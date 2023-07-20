@@ -5,6 +5,10 @@ $(window).on('scroll', function(){
         $('.gotop').removeClass('active');
     }
   });
+  $('.gotop').on('click', function(){
+    window.scrollTo({top : 0, behavior: 'smooth'}); 
+  });
+ 
   //sdfa
 const elR = document.querySelector('.mb_right a:last-of-type'),
       elUl = document.querySelector('.mb_none'),

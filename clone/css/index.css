@@ -2999,6 +2999,7 @@
     width: 40px;
     height: 40px;
     transition: .5s;
+    cursor: pointer;
 }
 .gotop.active{
     transform: translateX(0%);
