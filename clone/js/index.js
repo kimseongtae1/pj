@@ -90,10 +90,9 @@ const elR = document.querySelector('.mb_right a:last-of-type'),
                      grid: {
                      rows: 3,
                      },
+                     observer: true,	
+                    observeParents: true,
                     spaceBetween: 10, 
-                    autoplay: {
-                        enabled: false,
-                    },
                     navigation: {
                         nextEl: ".swiper-button-next.pc2",
                         prevEl: ".swiper-button-prev.pc2",
@@ -103,11 +102,7 @@ const elR = document.querySelector('.mb_right a:last-of-type'),
                     },
                   breakpoints: {
                     1280: {
-                        
-                        autoplay: {
-                            enabled: true,
-                            delay: 3000,
-                        },
+                    
                         grid: {
                             rows: 0,
                         },
