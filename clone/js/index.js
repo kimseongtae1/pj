@@ -83,8 +83,7 @@ const elR = document.querySelector('.mb_right a:last-of-type'),
                 }
             });
   
-
-      
+            
                 var swiper = new Swiper(".slide1", {
                     slidesPerView: 1,
                     slidesPerColumnFill: 'column',
@@ -92,29 +91,28 @@ const elR = document.querySelector('.mb_right a:last-of-type'),
                      rows: 3,
                      },
                     spaceBetween: 10, 
+                    autoplay: {
+                        enabled: false,
+                    },
                     navigation: {
                         nextEl: ".swiper-button-next.pc2",
                         prevEl: ".swiper-button-prev.pc2",
                     },
-                                            observer: true,
-                        observeParents: true,
                     pagination: {
                         el: ".swiper-pagination",
                     },
                   breakpoints: {
                     1280: {
-                        loop:true,
-                       
+                        
+                        autoplay: {
+                            enabled: true,
+                            delay: 3000,
+                        },
                         grid: {
                             rows: 0,
                         },
                         slidesPerView: 5,
-                        spaceBetween: 30,
-                        autoplay: {
-                            delay: 3000,
-                            disableOnInteraction: false,
-                        },
-                        
+                        spaceBetween: 30,  
                     },           
                   }
                 });
