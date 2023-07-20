@@ -67,13 +67,23 @@ var swiper = new Swiper(".add", {
             })
 
                 window.addEventListener('scroll', function(){
-
-                    secArr.forEach(function(secPos,k){
+                  
+                    if(matchMedia("(min-width:481px) and (max-width:1279px)").matches){
+                        secArr.forEach(function(secPos,k){
                         
-                        if(secPos.y - window.innerHeight/4 < window.scrollY){
-                            menuFun(k);
-                        }
-                    });
+                            if(secPos.y - window.innerHeight/3 < window.scrollY){
+                                menuFun(k);
+                            }
+                        });
+                    }else{
+                        secArr.forEach(function(secPos,k){
+                        
+                            if(secPos.y - window.innerHeight/4 < window.scrollY){
+                                menuFun(k);
+                            }
+                        });
+                    }
+                    
             })
 
 
