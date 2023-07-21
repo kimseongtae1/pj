@@ -156,6 +156,14 @@
 @media (min-width:1280px){
     .banner_main .swiper-pagination-bullet {
         background-color: #000;
+        border-radius: 0;
+        flex: 1 0 1px; 
+        height: 2px;
+        width: 60px;
+        margin:0 !important;
+    }
+    .banner_main .swiper-pagination-bullets {
+        transform: translateY(-30px);
     }
     .haha .swiper-pagination-bullet {
         background-color: white;
