@@ -1,6 +1,7 @@
 @import url("./reset.css");
 @media (min-width: 481px) and (max-width: 1279px) {
   .gotop {
+    z-index: 300;
     transform: translateX(150%);
     position: fixed;
     right: 15px;
@@ -389,7 +390,6 @@
     left: 85%;
     width: 100px;
     height: 25px;
-    z-index: 0;
   }
   .ggood .ggood_1 .ggood_t .swiper-pagination-bullet-active {
     background-color: #000;
@@ -524,6 +524,7 @@
 }
 @media (max-width: 480px) {
   .gotop {
+    z-index: 300;
     transform: translateX(150%);
     position: fixed;
     right: 15px;
@@ -1046,6 +1047,7 @@
 }
 @media (min-width: 1280px) {
   .gotop {
+    z-index: 300;
     transform: translateX(150%);
     position: fixed;
     right: 15px;
@@ -1315,6 +1317,7 @@
     right: -5%;
   }
   .ggood .swiper-pagination.pc {
+    z-index: 0;
     width: 100px;
     height: 25px;
     position: absolute;

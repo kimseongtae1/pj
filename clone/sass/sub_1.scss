@@ -5,6 +5,7 @@
 
 @media (min-width:481px) and (max-width:1279px)
 { .gotop{
+    z-index: 300;
     transform: translateX(150%);
     position: fixed; right:15px; bottom:30px;
     width: 40px;
@@ -445,7 +446,6 @@
                     top: 50%; left: 85%;
                     width: 100px;
                     height: 25px;
-                    z-index: 0;
                 }
                 .swiper-pagination-bullet-active{
                     background-color: #000;
@@ -584,6 +584,7 @@
 }
 @media (max-width:480px) {
     .gotop{
+        z-index: 300;
         transform: translateX(150%);
         position: fixed; right:15px; bottom:30px;
         width: 40px;
@@ -1166,6 +1167,7 @@
 }
 @media(min-width:1280px){
     .gotop{
+        z-index: 300;
         transform: translateX(150%);
         position: fixed; right:15px; bottom:30px;
         width: 40px;
@@ -1452,6 +1454,7 @@
             top:50%; right: -5%;
         }
         .swiper-pagination.pc{
+            z-index: 0;
             width: 100px;
             height: 25px;
             position: absolute;

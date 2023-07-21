@@ -240,6 +240,7 @@
 
 @media (max-width:480px) {
     .gotop{
+        z-index: 300;
         transform: translateX(150%);
         position: fixed; right:15px; bottom:30px;
         width: 40px;
@@ -1259,6 +1260,7 @@
 }
 @media (min-width:481px) and (max-width:1279px) {
     .gotop{
+        z-index: 300;
         transform: translateX(150%);
         position: fixed; right:15px; bottom:30px;
         width: 40px;
@@ -3072,6 +3074,7 @@
 
 
 .gotop{
+    z-index: 300;
     transform: translateX(150%);
     position: fixed; right:15px; bottom:30px;
     width: 40px;

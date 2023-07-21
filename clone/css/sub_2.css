@@ -5,6 +5,7 @@ main {
 
 @media (max-width: 480px) {
   .gotop {
+    z-index: 300;
     transform: translateX(150%);
     position: fixed;
     right: 15px;
@@ -644,6 +645,7 @@ main {
 }
 @media (min-width: 481px) and (max-width: 1279px) {
   .gotop {
+    z-index: 300;
     transform: translateX(150%);
     position: fixed;
     right: 15px;
@@ -1284,6 +1286,7 @@ main {
 }
 @media (min-width: 1280px) {
   .gotop {
+    z-index: 300;
     transform: translateX(150%);
     position: fixed;
     right: 15px;
