@@ -305,6 +305,7 @@
             }  
         }
         .sub_txt{  
+
             padding: 20px;
             font-size: 22px;
             color: #333;
@@ -321,6 +322,8 @@
         position: sticky; top: 50px;
         z-index: 1;
         background-color: white;
+        color: #666;
+        font-weight: bold;
         .g1_it{
             padding: 5px;
             cursor: pointer;
@@ -419,6 +422,8 @@
         }
     }
     .ggood{
+        color: #666;
+        font-weight: bold;
         display: flex;
         padding: 30px;
         overflow: hidden;
@@ -452,6 +457,7 @@
                     top: 50%; left: 85%;
                     width: 100px;
                     height: 25px;
+                    z-index: -1;
                 }
                 .swiper-pagination-bullet-active{
                     background-color: #000;
@@ -1349,6 +1355,7 @@
             }
         }
         .sub_txt{
+            font-weight: bold;
             position: absolute; left:44%; top:40%;
             font-size: 48px;
         }
@@ -1365,6 +1372,8 @@
         position: sticky; left: 0; top:75px;
         z-index: 2;
         background-color: white;
+        color: #666;
+        font-weight: bold;
         .g1_it{
             padding: 10px;
             cursor: pointer;
@@ -1480,6 +1489,7 @@
             width: 100%;
             margin-top: 50px;
             .ggood_t{
+                font-weight: bold;
                 margin-left: 30px;
                 .p1_1{
                     font-size: 28px;
@@ -1561,6 +1571,7 @@
             padding: 50px 0 50px 30px;
             
             .li_tt{
+                font-weight: bold;
                 padding-left: 30px;
                 .li_t1{
                     font-size: 28px;

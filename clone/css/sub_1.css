@@ -274,6 +274,8 @@
     top: 50px;
     z-index: 1;
     background-color: white;
+    color: #666;
+    font-weight: bold;
   }
   .good_item .g1_it {
     padding: 5px;
@@ -361,6 +363,8 @@
     border-radius: 100%;
   }
   .ggood {
+    color: #666;
+    font-weight: bold;
     display: flex;
     padding: 30px;
     overflow: hidden;
@@ -396,6 +400,7 @@
     left: 85%;
     width: 100px;
     height: 25px;
+    z-index: -1;
   }
   .ggood .ggood_1 .ggood_t .swiper-pagination-bullet-active {
     background-color: #000;
@@ -1221,6 +1226,7 @@
     width: 100%;
   }
   .sub_main .sub_start .sub_txt {
+    font-weight: bold;
     position: absolute;
     left: 44%;
     top: 40%;
@@ -1237,6 +1243,8 @@
     top: 75px;
     z-index: 2;
     background-color: white;
+    color: #666;
+    font-weight: bold;
   }
   .good_item .g1_it {
     padding: 10px;
@@ -1344,6 +1352,7 @@
     margin-top: 50px;
   }
   .ggood .ggood_1 .ggood_t {
+    font-weight: bold;
     margin-left: 30px;
   }
   .ggood .ggood_1 .ggood_t .p1_1 {
@@ -1422,6 +1431,7 @@
     padding: 50px 0 50px 30px;
   }
   .it_list .li_st .li_tt {
+    font-weight: bold;
     padding-left: 30px;
   }
   .it_list .li_st .li_tt .li_t1 {
