@@ -996,6 +996,7 @@
 }
 
 .s_w_t1{
+    height: 100%;
     position: absolute; left: 0; bottom:0;
     padding: 20px;
     color: white;
@@ -1035,6 +1036,7 @@
 }
 
 .s_w_t2{
+
     position: absolute; left: 0; bottom:0;
     height: 100%;
     padding: 20px;
@@ -1061,13 +1063,14 @@
 }
 
 .s_w_t3{
+
     position: absolute; left: 0; bottom:0;
-    width: 100%;
+    height: 100%;
     padding: 20px;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: white;
 }
 
 .s_w_t3 > h6{
@@ -2025,6 +2028,7 @@
 }
 
 .s_w_t1{
+    white-space: nowrap;
     padding: 40px;
     position: absolute; left: 0; bottom:0;
     width: 100%;
@@ -2053,6 +2057,7 @@
 }
 
 .s_w_t2{
+    white-space: nowrap;
     padding: 40px;
     position: absolute; left: 0; bottom:0;
     width: 100%;
@@ -2081,6 +2086,7 @@
 }
 
 .s_w_t3{
+    white-space: nowrap;
     padding: 40px;
     position: absolute; left: 0; bottom:0;
     width: 100%;

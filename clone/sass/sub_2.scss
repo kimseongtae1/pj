@@ -304,9 +304,12 @@ main{
                     }
                     
                 }
-    
                 .s2_box{
-                    position: absolute; bottom: 5%; left: 0;
+                    display: none;
+                }
+                .s2_bom{
+                    white-space: nowrap;
+                    position: absolute; bottom: 0; left: 0;
                     padding: 35px;
                     .s2_lg{
                         display: none;
@@ -1042,12 +1045,13 @@ main{
                 }
     
                 .s2_box{
+                    display: none;
+                }
+                .s2_bom{
+                    white-space: nowrap;
                     position: absolute; bottom: 5%; left: 0;
                     padding: 35px;
                     width: 50vw;
-                    .s2_lg{
-                        display: none;
-                    }
                     .s2_txt{
                         line-height: 35px;
                         margin-top: 10px;
@@ -1472,6 +1476,9 @@ main{
 
 
 @media (min-width:1280px) {
+    .s2_bom{
+        display: none;
+    }
     .gotop{
         z-index: 300;
         transform: translateX(150%);
@@ -1655,6 +1662,7 @@ main{
                 }
     
                 .s2_box{
+                    white-space: nowrap;
                     position: absolute; top: 5%; left: 5%;
                     padding: 10px;
                     width: 50vw;
