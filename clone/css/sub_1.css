@@ -1,5 +1,11 @@
 @import url("./reset.css");
 @media (min-width: 481px) and (max-width: 1279px) {
+  .ananan {
+    display: none;
+  }
+  .ananan1 {
+    display: none;
+  }
   .gotop {
     z-index: 300;
     transform: translateX(150%);
@@ -523,6 +529,12 @@
   }
 }
 @media (max-width: 480px) {
+  .ananan {
+    display: none;
+  }
+  .ananan1 {
+    display: none;
+  }
   .gotop {
     z-index: 300;
     transform: translateX(150%);
@@ -1454,17 +1466,48 @@
     font-size: 16px;
   }
   .it_list .li_st .list_m .style_li .size_2 {
+    position: relative;
     width: 18%;
     margin-right: 20px;
   }
-  .it_list .li_st .list_m .style_li .size_2 img {
+  .it_list .li_st .list_m .style_li .size_2 .ananan {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    right: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .it_list .li_st .list_m .style_li .size_2 .ananan img {
+    width: 36px;
+    height: 36px;
+  }
+  .it_list .li_st .list_m .style_li .size_2 .ananan.active {
+    display: block;
+  }
+  .it_list .li_st .list_m .style_li .size_2 .ananan1 {
+    display: none;
+    position: absolute;
+    bottom: 120px;
+    right: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .it_list .li_st .list_m .style_li .size_2 .ananan1 img {
+    width: 36px;
+    height: 36px;
+  }
+  .it_list .li_st .list_m .style_li .size_2 .ananan1.active {
+    display: block;
+  }
+  .it_list .li_st .list_m .style_li img {
     cursor: pointer;
     width: 100%;
   }
-  .it_list .li_st .list_m .style_li .size_2 p:nth-of-type(1) {
+  .it_list .li_st .list_m .style_li p:nth-of-type(1) {
     cursor: pointer;
   }
-  .it_list .li_st .list_m .style_li .size_2:hover img {
+  .it_list .li_st .list_m .size_2:hover a img {
     transform: scale(1.1);
   }
 }

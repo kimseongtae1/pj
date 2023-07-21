@@ -239,6 +239,12 @@
 }
 
 @media (max-width:480px) {
+    .ananan{
+       display: none;
+    }
+    .ananan1{
+       display: none;
+    }
     .gotop{
         z-index: 300;
         transform: translateX(150%);
@@ -1259,6 +1265,12 @@
 }
 }
 @media (min-width:481px) and (max-width:1279px) {
+    .ananan{
+        display: none;
+     }
+     .ananan1{
+        display: none;
+     }
     .gotop{
         z-index: 300;
         transform: translateX(150%);
@@ -2587,22 +2599,47 @@
     justify-content: flex-start;
     
 }
-.item1:hover img {
+.ananan{
+    display: none;
+    position: absolute;
+    bottom: 50px; right: 5px;
+    transition: .5s;
+    cursor: pointer;
+}
+.ananan1{
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    bottom: 60px; right: 5px;
+    transition: .5s;
+}
+.ananan.active{
+    display: block;
     transform: scale(1.1);
 }
-.item2:hover img {
+
+.ananan1.active{
+   display: block;
+   transform: scale(1.1);
+}
+
+.item1:hover a > img:nth-of-type(1) {
     transform: scale(1.1);
 }
-.item3:hover img {
+.item2:hover a >img:nth-of-type(1) {
     transform: scale(1.1);
 }
-.item4:hover img {
+.item3:hover a >img:nth-of-type(1) {
     transform: scale(1.1);
 }
-.item5:hover img {
+.item4:hover a >img:nth-of-type(1) {
+    transform: scale(1.1);
+}
+.item5:hover a >img:nth-of-type(1) {
     transform: scale(1.1);
 }
 .item1.swiper-slide {
+    position: relative;
     display: flex;
     flex-direction: column;
 }

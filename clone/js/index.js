@@ -195,6 +195,23 @@ $(window).on('scroll', function(){
   $('.exex3').hover(function(){
     $(this).children('ul').stop().slideToggle(50);
   });
+
+  $('.item1').hover(function(){
+    $(this).find('.ananan').toggleClass('active');
+  })
+  $('.item2').hover(function(){
+    $(this).find('.ananan').toggleClass('active');
+  })
+  $('.item3').hover(function(){
+    $(this).find('.ananan').toggleClass('active');
+  })
+  $('.item4').hover(function(){
+    $(this).find('.ananan').toggleClass('active');
+  })
+  $('.item5').hover(function(){
+    $(this).find('.ananan').toggleClass('active');
+    $(this).find('.ananan1').toggleClass('active');
+  })
  
  
   

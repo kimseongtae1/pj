@@ -1,3 +1,10 @@
+$('.size_2').hover(function(){
+  $(this).find('.ananan').toggleClass('active');
+  $(this).find('.ananan1').toggleClass('active');
+})
+
+//dsfafa
+
 $('.exex').hover(function(){
     $(this).children('ul').stop().slideToggle(50);
   });
