@@ -47,6 +47,7 @@ main {
     transform: translateX(0%);
   }
   .mb_header .mb .mb_none {
+    overflow-y: scroll;
     position: fixed;
     top: 0;
     left: 0;
@@ -685,6 +686,7 @@ main {
     transform: translateX(0%);
   }
   .mb_header .mb .mb_none {
+    overflow-y: scroll;
     position: fixed;
     top: 0;
     left: 0;
@@ -1342,11 +1344,91 @@ main {
   font-size: 18px;
   font-weight: bold;
 }
-.osulloc_header .inner_box .right_box a:nth-of-type(4) {
+.osulloc_header .inner_box .right_box .dan {
+  display: none;
+  position: absolute;
+  transform: translateX(-100px);
+  margin-top: 10px;
+  list-style-type: none;
+  background-color: white;
+  padding: 10px;
+  text-align: right;
+}
+.osulloc_header .inner_box .right_box .dan li {
+  cursor: pointer;
+  margin: 10px;
+}
+.osulloc_header .inner_box .right_box .dan li:hover {
+  color: #668904;
+}
+.osulloc_header .inner_box .right_box .dan.active {
+  display: block;
+}
+.osulloc_header .inner_box .right_box .exex2 {
   padding-left: 50px;
 }
-.osulloc_header .inner_box .right_box a:nth-of-type(5) {
+.osulloc_header .inner_box .right_box .exex2 .dan2 {
+  display: none;
+  position: absolute;
+  transform: translateX(-10px);
+  margin-top: 10px;
+  list-style-type: none;
+  background-color: white;
+  padding: 10px;
+  text-align: right;
+}
+.osulloc_header .inner_box .right_box .exex2 .dan2 li {
+  cursor: pointer;
+  margin: 10px;
+}
+.osulloc_header .inner_box .right_box .exex2 .dan2 li:hover {
+  color: #668904;
+}
+.osulloc_header .inner_box .right_box .exex2 .dan2.active {
+  display: block;
+}
+.osulloc_header .inner_box .right_box .exex2 a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: #555;
+  font-size: 18px;
+  font-weight: bold;
+}
+.osulloc_header .inner_box .right_box .exex2 a:hover {
+  color: #668904;
+}
+.osulloc_header .inner_box .right_box .exex3 {
   padding-right: 50px;
+}
+.osulloc_header .inner_box .right_box .exex3 .dan3 {
+  display: none;
+  position: absolute;
+  transform: translateX(-10px);
+  margin-top: 10px;
+  list-style-type: none;
+  background-color: white;
+  padding: 10px;
+  text-align: right;
+}
+.osulloc_header .inner_box .right_box .exex3 .dan3 li {
+  cursor: pointer;
+  margin: 10px;
+}
+.osulloc_header .inner_box .right_box .exex3 .dan3 li:hover {
+  color: #668904;
+}
+.osulloc_header .inner_box .right_box .exex3 .dan3.active {
+  display: block;
+}
+.osulloc_header .inner_box .right_box .exex3 a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: #555;
+  font-size: 18px;
+  font-weight: bold;
+}
+.osulloc_header .inner_box .right_box .exex3 a:hover {
+  color: #668904;
 }
 .osulloc_header .inner_box .right_box a:hover {
   color: #668904;

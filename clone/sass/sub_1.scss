@@ -49,6 +49,7 @@
             }
             
             .mb_none{
+                overflow-y: scroll;
                 position: fixed; top: 0; left: 0;
                 box-sizing: border-box;
                 z-index: 300;
@@ -625,6 +626,7 @@
             }
 
             .mb_none{
+                overflow-y: scroll;
                 position: fixed; top: 0; left: 0;
                 box-sizing: border-box;
                 z-index: 300;
@@ -1214,14 +1216,98 @@
                 font-size: 18px;
                 font-weight: bold;
             }
-    
-            a:nth-of-type(4){
+            .dan{
+                display: none;
+                position: absolute;
+                transform: translateX(-100px);
+                margin-top: 10px;
+                list-style-type: none;
+                background-color:white;
+                padding: 10px;
+                text-align: right;
+                li {
+                    cursor: pointer;
+                    margin: 10px;
+                   }
+                li:hover{
+                color: #668904;;
+                }
+               }
+            .dan.active{
+                display: block;
+               }
+           
+               
+           
+            .exex2 {
                 padding-left: 50px;
+                .dan2{
+                    display: none;
+                    position: absolute;
+                    transform: translateX(-10px);
+                    margin-top: 10px;
+                    list-style-type: none;
+                    background-color:white;
+                    padding: 10px;
+                    text-align: right;
+                    li {
+                        cursor: pointer;
+                        margin: 10px;
+                        }
+                    li:hover{
+                        color: #668904;;
+                        }
+                    }
+                .dan2.active{
+                display: block;
+                }
+                a{
+                    padding: 0 10px;
+                    text-decoration: none;
+                    color: #555;
+                    font-size: 18px;
+                    font-weight: bold;
+
+                } 
+
+                a:hover {
+                    color: #668904;;
+                }
             }
-    
-            a:nth-of-type(5){
+            
+            .exex3 {
                 padding-right: 50px;
-            }
+                .dan3{
+                    display: none;
+                    position: absolute;
+                    transform: translateX(-10px);
+                    margin-top: 10px;
+                    list-style-type: none;
+                    background-color:white;
+                    padding: 10px;
+                    text-align: right;
+                    li {
+                        cursor: pointer;
+                        margin: 10px;
+                        }
+                    li:hover{
+                        color: #668904;;
+                        }
+                    }
+                    .dan3.active{
+                    display: block;
+                    }
+                    a{
+                        padding: 0 10px;
+                        text-decoration: none;
+                        color: #555;
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                    a:hover {
+                        color: #668904;;
+                    }
+            } 
             
             a:hover {
                 color: #668904;;

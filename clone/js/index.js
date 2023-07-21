@@ -185,6 +185,17 @@ $(window).on('scroll', function(){
   $('.gotop').on('click', function(){
     window.scrollTo({top : 0, behavior: 'smooth'}); 
   });
+
+  $('.exex').hover(function(){
+    $(this).children('ul').stop().slideToggle(50);
+  });
+  $('.exex2').hover(function(){
+    $(this).children('ul').stop().slideToggle(50);
+  });
+  $('.exex3').hover(function(){
+    $(this).children('ul').stop().slideToggle(50);
+  });
+ 
  
   
 

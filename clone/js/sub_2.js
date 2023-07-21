@@ -1,3 +1,15 @@
+$('.exex').hover(function(){
+    $(this).children('ul').stop().slideToggle(50);
+  });
+  $('.exex2').hover(function(){
+    $(this).children('ul').stop().slideToggle(50);
+  });
+  $('.exex3').hover(function(){
+    $(this).children('ul').stop().slideToggle(50);
+  });
+  
+  //sdfasdfaf
+  
 $(window).on('scroll', function(){
     if($(window).scrollTop()){
        $('.gotop').addClass('active');
