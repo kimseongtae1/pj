@@ -423,7 +423,8 @@
     }
     
     .main_notice{
-        width: 100%;
+        white-space: nowrap;
+        width: 70% !important;
     }
     .swiper-slide.tears{
         display: flex;
@@ -438,8 +439,9 @@
     }
     
     .main_notice > div > a {
+        overflow: hidden;
         font-size: 14px;
-        width:70%;
+        width:70vw;
         text-decoration: none;
         color: #000;
     }
@@ -1459,7 +1461,8 @@
     }
     
     .main_notice{
-        width: 100%;
+        white-space: nowrap;
+        width: 70% !important;
     }
     .swiper-slide.tears{
         display: flex;
@@ -1474,8 +1477,9 @@
     }
     
     .main_notice > div > a {
+        overflow: hidden;
         font-size: 14px;
-        width:70%;
+        width:70vw;
         text-decoration: none;
         color: #000;
     }
