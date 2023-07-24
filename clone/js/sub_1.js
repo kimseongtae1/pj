@@ -86,22 +86,26 @@ var swiper = new Swiper(".add", {
         let secArr = [];
 
             elSection.forEach(function(ele){
-                secArr.push(ele.getBoundingClientRect());
+                secArr.push(ele.getBoundingClientRect().top);
             })
 
-                window.addEventListener('scroll', function(e){
+                window.addEventListener('scroll',  function(){
                   
                     
-                      
+                     
                         secArr.forEach(function(secPos,k){
                           
-                            if(secPos.y - window.innerHeight/2 < window.pageYOffset){
-                                menuFun(k);
-                            }
-                        });
-                    }
+                          if(secPos - window.innerHeight/2 < window.pageYOffset){
+                            
+                              menuFun(k);
+                          }
+                      });
+                       
                     
-            )
+                    
+                  }
+                    
+                )
 
 
         elGgood.forEach(function(v,k){

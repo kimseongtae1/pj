@@ -149,7 +149,9 @@ var swiper = new Swiper(".haha", {
   slidesPerView: 'auto',
   spaceBetween: 30,
   centeredSlides: true,
+  
   loop: true,
+  
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -158,6 +160,7 @@ var swiper = new Swiper(".haha", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+ 
   breakpoints: {
     1280: {
         centeredSlides: false,

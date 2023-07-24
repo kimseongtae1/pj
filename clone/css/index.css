@@ -938,6 +938,7 @@
     color: #999;
 }
 .mo_main{
+    font-family: 'GowunDodum';
     position: relative;
 }
 .m_st_dadabn {
@@ -961,6 +962,7 @@
 }
 
 .main_store_bn .m_st_ab > h6{
+    font-weight: normal;
     font-size: 28px;
     color: white;
 
@@ -991,6 +993,7 @@
 }
 
 .flex_b2{
+    font-family: 'GowunDodum';
     margin-top: 40px;
     display: flex;
     align-items: center;
@@ -1028,14 +1031,17 @@
     flex-shrink: 1;
     max-width: 100%;
 }
+
 .swiper-slide.slide_wrap_p2{
     flex-shrink: 1;
     max-width: 100%;
 }
+
 .swiper-slide.slide_wrap_p3{
     flex-shrink: 1;
     max-width: 100%;
 }
+
 
 .s_w_i2 {
     position: relative;
@@ -1084,6 +1090,7 @@
 }
 
 .s_w_t3 > h6{
+    font-weight: normal;
     font-size: 30px;
 }
 
@@ -1963,6 +1970,7 @@
     color: #999;
 }
 .mo_main{
+    font-family: 'GowunDodum';
     position: relative;
 }
 .m_st_dadabn {
@@ -1986,6 +1994,7 @@
 }
 
 .main_store_bn .m_st_ab > h6{
+    font-weight: normal;
     font-size: 28px;
     color: white;
 
@@ -2015,6 +2024,7 @@
 }
 
 .flex_b2{
+    font-family: 'GowunDodum';
     margin-top: 40px;
     display: flex;
     align-items: center;
@@ -2110,6 +2120,7 @@
 }
 
 .s_w_t3 > h6{
+    font-weight: normal;
     font-size: 30px;
 }
 
@@ -2961,6 +2972,7 @@
 }
 
 
+
 .m_st_dadabn >  img{
     padding-top: 10px;
     width: 95.5%;
@@ -2974,13 +2986,14 @@
 }
 
 .main_store_bn .m_st_ab > p{
-    font-family: 'Gowun Dodum';
+    font-family: 'GowunDodum';
     font-size: 16px;
     color: white;
 }
 
 .main_store_bn .m_st_ab > h6{
-    font-family: 'Gowun Dodum';
+    font-weight: normal;
+    font-family: 'GowunDodum';
     font-size: 30px;
     color: white;
 
@@ -3012,6 +3025,7 @@
 }
 
 .flex_b2{
+    font-family: 'GowunDodum';
     margin-top: 40px;
     display: flex;
     align-items: center;
@@ -3075,6 +3089,7 @@
 }
 
 .s_w_t3 > h6{
+    font-weight: normal;
     font-size: 30px;
 }
 
