@@ -94,7 +94,7 @@ var swiper = new Swiper(".add", {
                     if(matchMedia("(min-width:481px) and (max-width:1279px)").matches){
                         secArr.forEach(function(secPos,k){
                         
-                            if(secPos.y - window.innerHeight/3 < window.scrollY){
+                            if(secPos.y - window.innerHeight/2 < window.scrollY){
                                 menuFun(k);
                             }
                         });
