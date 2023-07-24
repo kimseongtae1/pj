@@ -103,7 +103,7 @@ const elR = document.querySelector('.mb_right a:last-of-type'),
                     },
                   breakpoints: {
                     1280: {
-                      loop:true,
+                      
                         grid: {
                             rows: 0,
                         },
