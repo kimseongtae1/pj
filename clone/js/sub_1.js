@@ -89,25 +89,19 @@ var swiper = new Swiper(".add", {
                 secArr.push(ele.getBoundingClientRect());
             })
 
-                window.addEventListener('scroll', function(){
+                window.addEventListener('scroll', function(e){
                   
-                    if(matchMedia("(min-width:481px) and (max-width:1279px)").matches){
+                    
+                      
                         secArr.forEach(function(secPos,k){
-                        
-                            if(secPos.y - window.innerHeight/2 < window.scrollY){
-                                menuFun(k);
-                            }
-                        });
-                    }else{
-                        secArr.forEach(function(secPos,k){
-                        
-                            if(secPos.y - window.innerHeight/4 < window.scrollY){
+                          
+                            if(secPos.y - window.innerHeight/2 < window.pageYOffset){
                                 menuFun(k);
                             }
                         });
                     }
                     
-            })
+            )
 
 
         elGgood.forEach(function(v,k){
