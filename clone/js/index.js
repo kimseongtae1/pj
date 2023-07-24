@@ -87,7 +87,6 @@ const elR = document.querySelector('.mb_right a:last-of-type'),
                 var swiper = new Swiper(".slide1", {
                     slidesPerView: 1,
                     slidesPerColumnFill: 'column',
-                    
                      grid: {
                      rows: 3,
                      },
@@ -103,12 +102,16 @@ const elR = document.querySelector('.mb_right a:last-of-type'),
                     },
                   breakpoints: {
                     1280: {
-                      
+                      loop: true,
                         grid: {
                             rows: 0,
                         },
                         slidesPerView: 5,
                         spaceBetween: 30,  
+                        autoplay: {
+                          delay: 2500,
+                          disableOnInteraction: false,
+                        },
                     },           
                   }
                 });
